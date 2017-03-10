@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/listview_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_banklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_18dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:layout_gravity="center|center_horizontal"
+            android:drawableTop="@mipmap/ico_record"
+            android:text="暂无记录"
+            android:textColor="@color/black_9999"
+            android:textSize="@dimen/dimen_14dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

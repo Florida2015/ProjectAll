@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <ImageView
+        android:id="@+id/img_register_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_registered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_138dp"/>
+
+    <TextView
+        android:id="@+id/tv_register_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_register_status"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/blue_1f80"
+        android:text="注册完成"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv_register_status"
+        android:layout_marginTop="@dimen/dimen_10dp">
+        <TextView
+            android:id="@+id/tv_register_status_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/blue_1f80"
+            android:text="8秒"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_aaaa"
+            android:text="后自动跳转至首页"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_above="@+id/linear_register_status"
+        android:background="@color/line_a"/>
+
+    <LinearLayout
+        android:id="@+id/linear_register_status"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_register_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/blue_1f80"
+            android:text="返回首页"
+            android:textSize="@dimen/dimen_16sp"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/btn_register_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/blue_1f80"
+            android:textSize="@dimen/dimen_16sp"
+            android:text="个人中心"/>
+    </LinearLayout>
+
+</RelativeLayout>

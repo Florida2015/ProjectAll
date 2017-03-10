@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@color/background_default"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.注册相关问题?"
+        android:textSize="@dimen/dimen_13sp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:textColor="@color/grey_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大法师的法师打发按时间考虑对方就爱是两顿饭案发生的发生地方"
+        android:textSize="14sp"
+        android:paddingBottom="10dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black_text"/>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1px"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:background="@color/line_d"/>
+</LinearLayout>

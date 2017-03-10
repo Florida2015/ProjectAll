@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_ecec">
+
+    <!--<include-->
+        <!--android:id="@+id/include_menu"-->
+        <!--layout="@layout/base_activity"/>-->
+
+    <ListView
+        android:id="@+id/listview_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:divider="@color/black_e8e8"
+        android:dividerHeight="1px"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_no_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/icon_no_bank"
+        android:drawablePadding="15dp"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/black_9999"
+        android:text="您尚未添加任何银行卡"
+        />
+
+    <Button
+        android:id="@+id/btn_add_bank_n"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="+ 添加新卡"
+        android:textColor="@color/blue_2299"
+        android:textSize="18sp"
+        android:background="@drawable/shape_line_coner"/>
+
+
+</LinearLayout>

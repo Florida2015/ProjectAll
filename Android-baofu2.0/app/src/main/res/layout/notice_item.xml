@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/tv_notice_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:padding="@dimen/dimen_5dp"
+        android:layout_gravity="center"
+        android:text="2016-10-12 15:10"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/greay_red_g"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="红包"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/blue_1f80"
+            />
+        <TextView
+            android:id="@+id/tv_notice_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="2016-10-12"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_3333"
+            />
+        <TextView
+            android:id="@+id/tv_notice_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="红包"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_aaaa"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@color/grey_f1f1"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:background="@drawable/bg_white_to_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:text="立即查看"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_aaaa"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:src="@mipmap/ico_next"/>
+    </RelativeLayout>
+</LinearLayout>

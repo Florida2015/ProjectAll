@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include-->
+        <!--android:id="@+id/include_menu"-->
+        <!--layout="@layout/base_activity"/>-->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/transparent">
+<!--成功订单-->
+        <Button
+            android:id="@+id/btn_order_succes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp"
+            android:drawablePadding="0dp"
+            android:background="@drawable/color_order_top"
+            android:drawableTop="@drawable/order_succes"
+            android:text="成功订单"
+            android:textColor="@color/black_6666"
+            android:textSize="@dimen/text_buttombar" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5e5" />
+        <!--成功订单-->
+        <Button
+            android:id="@+id/btn_order_refund"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp"
+            android:drawablePadding="0dp"
+            android:background="@drawable/color_order_top"
+            android:drawableTop="@drawable/order_refund"
+            android:text="已还款"
+            android:textColor="@color/black_6666"
+            android:textSize="@dimen/text_buttombar" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5e5" />
+        <!--成功订单-->
+        <Button
+            android:id="@+id/btn_order_fail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp"
+            android:drawablePadding="0dp"
+            android:background="@drawable/color_order_top"
+            android:drawableTop="@drawable/order_fail"
+            android:text="失败订单"
+            android:textColor="@color/black_6666"
+            android:textSize="@dimen/text_buttombar" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5e5" />
+        <!--成功订单-->
+        <Button
+            android:id="@+id/btn_order_dealing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp"
+            android:drawablePadding="0dp"
+            android:background="@drawable/color_order_top"
+            android:drawableTop="@drawable/order_dealign"
+            android:text="处理中"
+            android:textColor="@color/black_6666"
+            android:textSize="@dimen/text_buttombar" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_content_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/black_ecec"
+        android:gravity="top" />
+
+</LinearLayout>

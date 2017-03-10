@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <LinearLayout
+        android:id="@+id/linear_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_continued"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+            <TextView
+                android:id="@+id/tv_orderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_orderData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_orderName"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/black_aaaa"
+                android:text="起息时间： "/>
+            <TextView
+                android:id="@+id/tv_orderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/orange_fbb0"
+                android:text=""/>
+        </RelativeLayout>
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab_layout_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:tl_iconVisible="false"
+            app:tl_indicator_color="@color/blue_15a4"
+            app:tl_indicator_height="1dp"
+            app:tl_textSelectColor="@color/blue_1f80"
+            app:tl_textUnselectColor="@color/black"
+            app:tl_textsize="15sp"
+            app:tl_underline_gravity="BOTTOM"
+            app:tl_underline_color="@color/blue_15a4"
+            app:tl_underline_height="0dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_f1f1"/>
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_continued"
+        style="@style/bespeak_submit_btn"
+        android:layout_height="48dp"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:fb_borderColor="@color/white"
+        app:fb_borderWidth="0dp"
+        app:fb_defaultColor="@color/blue_1f80"
+        app:fb_focusColor="@color/white_3e8e"
+        app:fb_radius="0dp"
+        app:fb_text="立即续投"
+        app:fb_textSize="16sp"
+        app:fb_textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+</RelativeLayout>

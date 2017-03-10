@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/my_beijing">
+
+    <ImageButton
+        android:id="@+id/img_btn_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        android:src="@mipmap/nav_back"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:src="@drawable/my_logo"
+        android:id="@+id/imageView3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="@color/transparent_half_01">
+
+        <!--<EditText-->
+            <!--android:id="@+id/ed_user_phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/dimen_15dp"-->
+            <!--android:paddingTop="@dimen/dimen_10dp"-->
+            <!--android:paddingBottom="@dimen/dimen_10dp"-->
+            <!--android:inputType="phone"-->
+            <!--android:maxLength="11"-->
+            <!--android:textCursorDrawable="@drawable/cursor_white"-->
+            <!--android:background="@color/transparent_half_01"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textColorHint="@color/white_abc7e"-->
+            <!--android:hint="请输入手机号"/>-->
+
+        <com.hxxc.user.app.ui.discovery.search.ClearEditText
+            android:id="@+id/ed_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingRight="22dp"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:background="@color/transparent"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_abc7e"
+            android:hint="请输入手机号"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="@color/grey_3f82"/>
+        <!--<EditText-->
+            <!--android:id="@+id/ed_user_pass"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dimen_1dp"-->
+            <!--android:paddingLeft="@dimen/dimen_15dp"-->
+            <!--android:paddingTop="@dimen/dimen_10dp"-->
+            <!--android:paddingBottom="@dimen/dimen_10dp"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:background="@color/transparent_half_01"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textColorHint="@color/white_abc7e"-->
+            <!--android:hint="请输入密码"/>-->
+
+        <com.hxxc.user.app.widget.MyPasswordView
+            android:id="@+id/ed_user_pass"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:padding="@dimen/dimen_5dp"
+        android:background="@color/transparent"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/black_a9ce"
+        android:drawableLeft="@mipmap/ico_forget"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:text="忘记密码"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_longin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="#5199e4"
+        fancy:fb_focusColor="@color/blue_0447"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="登录"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" >
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white_b0d1"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/transparent"
+        fancy:fb_focusColor="@color/transparent_half"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="注册"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" >
+    </mehdi.sakout.fancybuttons.FancyButton>
+</LinearLayout>

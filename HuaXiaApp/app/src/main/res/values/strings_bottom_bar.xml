@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bottom_item_first">推荐</string>
+    <string name="bottom_item_second">投资</string>
+    <string name="bottom_item_three">活动</string>
+    <string name="bottom_item_four">我的</string>
+    <string name="bottom_item_five">更多</string>
+    <string name="indicate_value">10</string>
+    <string name="bottombar_text">按钮</string>
+    
+
+</resources>

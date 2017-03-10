@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:paddingTop="@dimen/dimen_20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="提示"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反馈已成功提交，"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="250dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="感谢您对华夏信财的支持！"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/text" />
+
+    <com.hxxc.user.app.widget.MyClickButton
+        android:id="@+id/sure"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        app:text="确定"
+        app:textSize="@dimen/dimen_16sp"
+        app:itbackground="blue_3"/>
+</LinearLayout>

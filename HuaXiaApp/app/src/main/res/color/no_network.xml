@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:color="@color/gray_20"/>
+    <!-- pressed -->
+    <item android:state_focused="true" android:color="@color/gray_20"/>
+    <!-- selected -->
+    <item android:color="@color/black_5e6d"/>
+    <!-- default 这个要在最底下，不然没有效果 -->
+
+</selector>

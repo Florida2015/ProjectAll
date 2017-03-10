@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/link" />
+
+        <TextView
+            android:id="@+id/tv_bindStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="已绑定"
+            android:textColor="@color/blue_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="绑定的手机号可以用于登录"
+            android:textColor="@color/grey_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:arr="false"
+            app:left="已绑定手机号"
+            app:right="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_d" />
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:arr="true"
+            app:left="更换手机号"
+            app:right="" />
+    </LinearLayout>
+</LinearLayout>

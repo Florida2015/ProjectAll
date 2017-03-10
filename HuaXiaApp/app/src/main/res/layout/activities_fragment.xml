@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_ecec">
+
+    <com.framwork.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/pull_listview_activities"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_no_work_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_empty_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/icon_no_wifi"/>
+
+        <TextView
+            android:id="@+id/tv_reloading_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_empty_activity"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:visibility="visible"
+            android:textSize="16sp"
+            android:textColor="@color/no_network"
+            android:text="点击屏幕 重新加载"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

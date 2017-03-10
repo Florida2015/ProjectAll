@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.hxxc.user.app.widget.MultiSwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/ll_webcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.hxxc.user.app.widget.MultiSwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_horizontal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_thumbs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_good"
+            android:text="111"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black_aa_text"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:drawableLeft="@drawable/ico_good"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_bad"
+            android:text="111"
+            android:textSize="@dimen/dimen_14sp"
+            android:gravity="center"
+            android:textColor="@color/black_aa_text"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:drawableLeft="@drawable/ico_bad"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

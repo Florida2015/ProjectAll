@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/dimen_15dp"
+    android:orientation="horizontal"
+    android:paddingRight="15dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:background="@drawable/red_envelope_n1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="100元"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:layout_marginLeft="-1dp"
+        android:background="@drawable/red_envelope_n2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_des1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最低投资金额1万元"
+            android:textColor="@color/red_low_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_des2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="有效期2016-7-8到2016-7-8"
+            android:gravity="bottom"
+            android:textColor="@color/red_low_text"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

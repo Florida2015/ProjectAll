@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text=""
+        android:textColor="@color/black_text"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="@color/line_d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_img_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入图片验证码"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black_3333"
+                android:textColorHint="@color/black_aaaa"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_e8e8" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black_3333"
+                android:textColorHint="@color/black_aaaa"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.SendCodeView
+                android:id="@+id/code_text"
+                android:layout_width="110dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hxxc.user.app.widget.MyClickButton
+        android:id="@+id/button_step"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:itbackground="blue"
+        app:textSize="@dimen/dimen_btn_18sp"
+        app:text="下一步" />
+</LinearLayout>

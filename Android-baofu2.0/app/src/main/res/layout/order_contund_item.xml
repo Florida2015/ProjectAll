@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_yeard_contund"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="12.05%"
+        android:textColor="@color/black_aaaa"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <TextView
+        android:id="@+id/tv_yeard_extra"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="0.05%"
+        android:textColor="@color/black_aaaa"
+        android:textSize="@dimen/dimen_12sp"
+        android:layout_toRightOf="@+id/tv_yeard_contund" />
+    <TextView
+        android:id="@+id/tv_yeard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_yeard_extra"
+        android:layout_marginLeft="15dp"
+        android:text="华信财365天"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <ImageView
+        android:id="@+id/img_choise_continud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_chox_n"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_f1f1"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="ball1">#EEB269</color>
+  <color name="ball2">#4DB19E</color>
+  <color name="ball3">#DC5753</color>
+  <color name="ball4">#3F4D59</color>
+
+  <integer-array name="colors">
+    <item>@color/ball1</item>
+    <item>@color/ball2</item>
+    <item>@color/ball3</item>
+    <item>@color/ball4</item>
+  </integer-array>
+</resources>

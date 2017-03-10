@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/bank_gongshang"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="工商银行"
+        android:textSize="14sp"
+        android:textColor="@color/black_3333"
+        />
+
+    <TextView
+        android:id="@+id/tv_bank_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_bank_name"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center|right"
+        android:singleLine="true"
+        android:text="单笔限额"
+        android:textSize="12sp"
+        android:textColor="@color/black_9999"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.huaxiafinance.lc.bottomindicator.IconTabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"/>
+
+    <View android:layout_width="match_parent"
+        android:id="@+id/divider"
+        android:layout_above="@id/indicator"
+        android:layout_height="1px"
+        android:background="#ababab"/>
+    <com.huaxiafinance.lc.bottomindicator.viewpager.CustomViewPager
+        android:layout_above="@id/divider"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

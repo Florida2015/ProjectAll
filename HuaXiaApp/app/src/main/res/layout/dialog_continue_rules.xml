@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="续投规则"
+        android:textSize="14sp"
+        android:textColor="@color/black_3333"
+        android:background="@color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/btn_close_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/close_notice"
+        android:background="@color/transparent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="38dp"
+        android:background="@color/black_e8e8"/>
+
+    <LinearLayout
+        android:id="@+id/linaer_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:paddingLeft="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_biao"/>
+
+        <TextView
+            android:id="@+id/tv_continue_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="3dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:gravity="top"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="@color/black_6666"
+            android:background="@color/transparent"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/linaer_rules"
+        android:background="@drawable/bg_continue_rules"/>
+
+</RelativeLayout>

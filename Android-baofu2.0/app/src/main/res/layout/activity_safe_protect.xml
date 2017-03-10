@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white">
+
+                <com.hxxc.user.app.widget.ArcProgress
+                    android:id="@+id/arcprogress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_20dp" />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:text="您的账户安全等级为高，建议立即完善资料！"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/dimen_13sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.hxxc.user.app.widget.LeftAndRightTextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="实名认证"
+                    app:left_drawable="@drawable/ico_real_name_n"
+                    app:right="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1px"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.user.app.widget.LeftAndRightTextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="绑定手机"
+                    app:left_drawable="@drawable/phone_n"
+                    app:right="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1px"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.user.app.widget.LeftAndRightTextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="绑定邮箱"
+                    app:left_drawable="@drawable/email_n"
+                    app:right="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1px"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.user.app.widget.LeftAndRightTextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="手势密码"
+                    app:left_drawable="@drawable/gestures_n"
+                    app:right="未设置" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1px"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.user.app.widget.LeftAndRightTextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="密码修改"
+                    app:left_drawable="@drawable/lock_n"
+                    app:right="修改" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

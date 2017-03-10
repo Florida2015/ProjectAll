@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_15dp"
+        android:background="@color/grey_f1f1" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_10dp">
+
+            <ImageView
+                android:id="@+id/img_home_icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ico_my_red" />
+
+            <TextView
+                android:id="@+id/tv_home_mine_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_toRightOf="@+id/img_home_icon"
+                android:text="xxxx"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_home_mine_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_home_mine_title"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_toRightOf="@+id/img_home_icon"
+                android:lineSpacingMultiplier="1.1"
+                android:text="x"
+                android:textColor="@color/black_aaaa"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <ImageView
+                android:id="@+id/img_mine_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ico_down_more" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_home_mine_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_home_mine_title"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/img_home_icon"
+            android:ellipsize="end"
+            android:text="xxx"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_d" />
+
+
+        <Button
+            android:id="@+id/btn_text_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="xxx"
+            android:textColor="@color/blue_1f80"
+            android:textSize="@dimen/dimen_16sp" />
+</LinearLayout>

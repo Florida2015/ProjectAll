@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <ImageView
+        android:id="@+id/img_invitation"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_banner"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_invitation_reward"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_3333"
+            android:text="邀请奖励"/>
+        <TextView
+            android:id="@+id/tv_order_detail_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_invitation_tip"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black_aaaa"
+            android:text="0"/>
+        <ImageView
+            android:id="@+id/img_invitation_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:src="@mipmap/ico_next"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_f1f1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_invitation_detail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:layout_marginTop="1px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/black_3333"
+            android:text="邀请明细"/>
+        <TextView
+            android:id="@+id/tv_order_detail_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_invitation_tip_1"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black_aaaa"
+            android:text="0"/>
+        <ImageView
+            android:id="@+id/img_invitation_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:src="@mipmap/ico_next"
+            />
+    </RelativeLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_invitation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/blue_text"
+        fancy:fb_focusColor="@color/blue_1447"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="邀请好友赚钱"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" />
+
+</LinearLayout>

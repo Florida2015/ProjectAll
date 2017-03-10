@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余可投"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_surplus_invest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:gravity="right"
+            android:text="0"
+            android:textColor="@color/black_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="出借金额"
+            android:textColor="@color/black_text"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/orange_text"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line_dash"
+            android:layerType="software" />
+
+        <!--<com.hxxc.user.app.widget.RulerView-->
+            <!--android:id="@+id/rulerview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="76.7dp"-->
+            <!--android:layout_marginLeft="@dimen/dimen_15dp"-->
+            <!--android:layout_marginRight="@dimen/dimen_15dp" />
+            -->
+        <com.hxxc.user.app.widget.SelectView
+            android:id="@+id/rulerview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginTop="10dp"
+            app:isCanvasLine="true"
+            app:unitLongLine="1"
+            app:unitSize="80dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="预期收益"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="0"
+            android:textColor="@color/orange_text"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+
+
+    <com.hxxc.user.app.widget.MyClickButton
+        android:id="@+id/step_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:itbackground="blue"
+        app:text="提交"
+        app:textColor="#ffffff"
+        app:textSize="@dimen/dimen_btn_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <com.hxxc.user.app.widget.MyCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="我已阅读并同意"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="《出借服务协议》"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/tv_agreement2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="和《风险揭示函》"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/dimen_12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_1px"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="市场有风险，投资需谨慎"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp" />
+</LinearLayout>

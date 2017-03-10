@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="back_half">#e0000000</color>
+    <color name="back_apla">#50000000</color>
+    <color name="black_half">#50000000</color>
+    <color name="white_apla">#50ffffff</color>
+
+    <!-- 黑色-->
+    <color name="black">#000000</color>
+    <color name="black_70">#b2000000</color>
+    <color name="black_5e6d">#5e6d81</color>
+    <color name="black_e8e8">#e8e8e8</color>
+    <color name="black_9999">#999999</color>
+    <color name="black_6666">#666666</color>
+    <color name="black_3333">#333333</color>
+    <color name="black_2226">#222633</color>
+    <color name="black_5555">#555555</color>
+    <color name="black_f6f6">#F6F6F6</color>
+    <color name="black_f5f5">#F5F5F5</color>
+    <color name="black_f9f9">#F9F9F9</color>
+    <color name="black_9f9f">#9F9F9F</color>
+    <color name="black_ecec">#ececec</color>
+    <color name="black_eeee">#eeee</color>
+    <color name="black_dcdc">#DCDCDC</color>
+    <color name="black_cccc">#CCCCCC</color>
+    <color name="black_e5e5">#E5E5E5</color>
+    <color name="black_d9d9">#D9D9D9</color>
+    <color name="black_d7d7">#D7D7D7</color>
+    <color name="black_dada">#DaDaDa</color>
+
+    <color name="dialog_text_title_color">#62676b</color>
+    <color name="dialog_xian">#DCDCDC</color>
+    <color name="black_0_color">#00000000</color>
+    <color name="red_10">#e44e4e</color>
+    <color name="red_fc81">#FC817D</color>
+
+    <color name="gray_20">#626262</color>
+    <color name="gray_a6a6">#a6a6a6</color>
+    <color name="gray_bcc4">#bcc4d0</color>
+    <color name="gray_6363c">#636c78</color>
+    <color name="gray_f7f5">#F7F5F6</color>
+    <color name="gray_b2b4">#B2B4B8</color>
+    <color name="gray_c1c1">#C1C1C1</color>
+
+    <color name="gray_f8f8">#F8F8F8</color>
+
+
+
+    <!-- 橘黄色-->
+    <color name="orange_ff92">#ff9211</color>
+    <color name="orange_cc6f">#cc6f02</color>
+    <color name="orange_fdf3">#FDF3CF</color>
+    <color name="orange_fbbd">#FBBD01</color>
+    <color name="orange_ffa8">#FFA841</color>
+    <color name="orange_ffb9">#FFB964</color>
+    <color name="orange_e194">#E19438</color>
+    <color name="orange_e27c">#E27C03</color>
+    <color name="orange_fcb1">#fcb158</color>
+    <color name="orange_c772">#C7722C</color>
+
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="blue_2299">#2299EC</color>
+    <color name="blue_2299f6">#2299F6</color>
+    <color name="blue_3B96">#3B96FD</color>
+
+
+    <color name="text_color_hint_gray">#c4c1be</color>
+    <color name="text_color_dark">#7a7672</color>
+
+    <!-- 暗红色-->
+    <color name="red">#ff0000</color>
+    <color name="red_cc00">#ec2a04</color>
+    <color name="red_e44b">#E44B4B</color>
+    <color name="red_ff4d">#FF4D5B</color>
+
+    <color name="white_10_color">#19ffffff</color>
+    <color name="white_20_color">#33ffffff</color>
+
+    <!--绿色-->
+    <color name="green_5f9c">#5f9c2a</color>
+
+    <color name="dialog_pressbtn_color">#E3E3E3</color>
+
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+
+</resources>

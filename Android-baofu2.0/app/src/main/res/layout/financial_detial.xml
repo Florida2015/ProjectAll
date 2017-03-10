@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/view_title" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="@mipmap/icon_financial_planner"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:src="@drawable/nav_back_white"/>
+
+            <com.hxxc.user.app.widget.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="@dimen/dimen_58dp"
+                android:layout_height="@dimen/dimen_58dp"
+                android:layout_gravity="center"
+                android:src="@drawable/default_financier_pic" />
+
+            <TextView
+                android:id="@+id/tv_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="xx"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_head_userno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="xxx"
+                android:textColor="@color/white_fafa"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_sum_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="xx"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="服务总数(万)"
+                        android:textColor="@color/white_fafa"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1px"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="#88ffffff" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_service_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="xx"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="服务人数(位)"
+                        android:textColor="@color/white_fafa"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="10dp"
+                android:text="所属地"
+                android:textColor="@color/black_3333"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:background="@color/grey_f1f1" />
+
+            <TextView
+                android:id="@+id/tv_finan_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="xx"
+                android:textColor="@color/black_aaaa"
+                android:textSize="@dimen/dimen_16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="10dp"
+                android:text="邮箱"
+                android:textColor="@color/black_3333"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_finan_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginTop="10dp"
+                android:text="xx"
+                android:textColor="@color/black_aaaa"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:background="@color/grey_f1f1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="10dp"
+                android:text="财富热线"
+                android:textColor="@color/black_3333"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_finan_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/telphone"
+                android:textColor="@color/black_aaaa"
+                android:textSize="@dimen/dimen_16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_financial_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="发送信息"
+                android:textColor="@color/blue_1f80"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <Button
+                android:id="@+id/btn_financial_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue_1f80"
+                android:text="电话联系"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

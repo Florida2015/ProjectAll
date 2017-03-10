@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white">
+        <LinearLayout
+            android:id="@+id/linear_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/shape_white">
+
+            <TextView
+                android:id="@+id/hint_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center"
+                android:text="提示"
+                android:visibility="visible"
+                android:textColor="@color/black_3333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hint_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hint_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="您所在的城市为：上海"
+                android:textColor="@color/black_6666"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/ed_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hint_1"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:hint=""
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black_70"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/blank_horizontal_divide"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear_dialog"
+            android:background="@color/dialog_xian" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/blank_horizontal_divide"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bottom_left"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:background="@color/dialog_xian" />
+
+            <Button
+                android:id="@+id/button_right"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textSize="14sp"
+                android:textColor="@color/text_color_dark"
+                android:background="@drawable/shape_white_bottom_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_dilaog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:src="@drawable/icon_dilog"/>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/black_half"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="选择优惠券"
+                android:textSize="14sp"
+                android:textColor="@color/black_3333"
+                android:background="@color/transparent"
+                />
+            <Button
+                android:id="@+id/btn_order_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="不使用优惠券"
+                android:textSize="14sp"
+                android:textColor="@color/blue_2299"
+                android:background="@color/transparent"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_dcdc"/>
+
+        <ListView
+            android:id="@+id/coupon_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:visibility="visible"
+            android:scrollbars="none"
+            android:listSelector="@color/transparent"
+            android:background="@color/white">
+        </ListView>
+        <TextView
+            android:id="@+id/tv_empty_nolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/icon_empty"
+            android:drawablePadding="25dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="暂无可用优惠券！"
+            android:textSize="16sp"
+            android:textColor="@color/black_3333"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+</LinearLayout>

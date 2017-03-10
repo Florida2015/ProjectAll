@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hxxc.user.app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- QQ、QQ空间所需权限 -->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--新浪微博-->
+    <!-- 用于调用 JNI -->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+
+    <application
+        android:name=".HXXCApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--app更新下载的服务-->
+        <service
+            android:name=".rest.download.DownloadService"
+            android:exported="true" />
+
+        <!--融云聊天用于接收消息的广播-->
+        <receiver
+            android:name=".listener.MyNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GuideActivity" />
+
+        <activity
+            android:name=".ui.MainActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <!--html加载页面-->
+        <activity
+            android:name=".ui.discovery.HtmlActivity"
+            android:screenOrientation="portrait" />
+        <!--Webview-->
+        <activity
+            android:name=".ui.index.AdsActivity"
+            android:screenOrientation="portrait" />
+        <!--部门列表页-->
+        <activity
+            android:name=".ui.discovery.DepartmentActivity"
+            android:screenOrientation="portrait" />
+        <!--搜索页-->
+        <activity
+            android:name=".ui.discovery.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--选择页-->
+        <activity
+            android:name=".ui.discovery.search.SelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--照片预览页-->
+        <activity
+            android:name=".ui.discovery.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <!--部门详情页-->
+        <activity
+            android:name=".ui.discovery.DepartmentDefaultActivity"
+            android:screenOrientation="portrait" />
+        <!--活动中心-->
+        <activity
+            android:name=".ui.discovery.ActionCenterActivity"
+            android:screenOrientation="portrait" />
+        <!--产品详情页-->
+        <activity
+            android:name=".ui.product.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--投资界面-->
+        <activity
+            android:name=".ui.product.InvestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--支付界面-->
+        <activity
+            android:name=".ui.product.PayActivity"
+            android:screenOrientation="portrait" />
+
+        <!--认证页面-->
+        <activity
+            android:name=".ui.product.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <!--绑卡页面-->
+        <activity
+            android:name=".ui.product.BaofuBingCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--支付成功界面-->
+        <activity
+            android:name=".ui.product.PaySuccessedActivity"
+            android:screenOrientation="portrait" />
+        <!--订单详情  续投 对话框-->
+        <activity
+            android:name="com.hxxc.user.app.ui.order.OrderContinuedDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--android:theme="@android:style/Theme.Material.Wallpaper.NoTitleBar"-->
+        <!--创建手势密码页-->
+        <activity
+            android:name=".ui.mine.gesture.CreateGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme" />
+        <!--手势密码页-->
+        <activity
+            android:name=".ui.mine.gesture.UnlockGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme" />
+        <!--手势密码管理页面-->
+        <activity
+            android:name=".ui.mine.gesture.GestureManagerActivity"
+            android:screenOrientation="portrait" />
+        <!--设置手势密码-->
+        <activity
+            android:name="com.hxxc.user.app.ui.user.SetGesturePassActivity"
+            android:screenOrientation="portrait" />
+
+        <!--绑定邮箱界面-->
+        <activity
+            android:name=".ui.mine.BindEmailActivity"
+            android:screenOrientation="portrait" />
+        <!--绑定手机界面-->
+        <activity
+            android:name=".ui.mine.setting.bindphone.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <!--绑定手机界面2-->
+        <activity
+            android:name=".ui.mine.setting.bindphone.BindPhone2Activity"
+            android:screenOrientation="portrait" />
+        <!--绑定手机界面3-->
+        <activity
+            android:name=".ui.mine.setting.bindphone.BindPhone3Activity"
+            android:screenOrientation="portrait" />
+        <!--绑定手机界面4-->
+        <activity
+            android:name=".ui.mine.setting.bindphone.BindPhone4Activity"
+            android:screenOrientation="portrait" />
+        <!--绑定成功界面-->
+        <activity
+            android:name=".ui.mine.setting.bindphone.BindPhoneSucessActivity"
+            android:screenOrientation="portrait" />
+        <!--账户设置页-->
+        <activity
+            android:name=".ui.mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!--用户信息页 个人信息-->
+        <activity
+            android:name=".ui.mine.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--修改用户信息页-->
+        <activity
+            android:name=".ui.mine.UserInfoItemActivity"
+            android:screenOrientation="portrait" />
+        <!--我的  基金页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.FundActivity"
+            android:screenOrientation="portrait" />
+
+        <!--关于我们-->
+        <activity
+            android:name=".ui.mine.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!--意见反馈-->
+        <activity
+            android:name=".ui.mine.setting.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <!--登录页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.user.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme" />
+
+        <!--注册 页-->
+        <activity
+            android:name=".ui.user.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!--注册 成功状态 页-->
+        <activity
+            android:name=".ui.user.RegisterStatusActivity"
+            android:screenOrientation="portrait" />
+
+        <!--账户安全 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.SafeProtectActivity"
+            android:screenOrientation="portrait" />
+        <!--忘记密码 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.user.ForgetpasswordActivity"
+            android:screenOrientation="portrait" />
+        <!--找回密码成功界面-->
+        <activity
+            android:name=".ui.user.FindPasswordSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.SetingPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!--绑定理财师 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.financial.BindingFinancialActivity"
+            android:screenOrientation="portrait" />
+        <!--搜索顾问页 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.financial.SearchFinancialActivity"
+            android:screenOrientation="portrait" />
+        <!--绑定顾问 对话框 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.financial.DialogBindingFinancial"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--邀请好友-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.invitation.InvitationFriendsActivity"
+            android:screenOrientation="portrait" />
+        <!--我的 签到-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.sign.SignActivity"
+            android:screenOrientation="portrait" />
+        <!--我的 红包-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.redpackage.RedPackageActivity"
+            android:screenOrientation="portrait" />
+        <!--订单列表 收益中 赎回中 已赎回-->
+        <activity
+            android:name="com.hxxc.user.app.ui.order.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情 页-->
+        <activity
+            android:name="com.hxxc.user.app.ui.order.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 银行卡列表-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.bankcard.BankCardListActivity"
+            android:screenOrientation="portrait" />
+        <!--我的理财师-->
+        <activity
+            android:name="com.hxxc.user.app.ui.financial.FinancialDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginActivityTheme" />
+        <!--会员中心-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.membercenter.MemberCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <!--积分列表-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.integral.IntegralListActivity"
+            android:screenOrientation="portrait" />
+        <!--邀请记录-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.invitation.InvitationRecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 权益说明-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.equitynote.EquityNoteActivity"
+            android:screenOrientation="portrait" />
+        <!--web h5-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.web.WebActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息列表-->
+
+        <activity
+            android:name=".ui.mine.noticelist.MessageActivity"
+            android:screenOrientation="portrait" />
+        <!--通知列表 -->
+        <activity
+            android:name=".ui.mine.noticelist.NoticesActivity"
+            android:screenOrientation="portrait" />
+        <!--新闻公告-->
+        <activity
+            android:name=".ui.mine.noticelist.NewsActivity"
+            android:screenOrientation="portrait" />
+        <!--通知列表 -->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.noticelist.NoticeListActivity"
+            android:screenOrientation="portrait" />
+        <!--资产分析-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.assetsrecord.AssetsRecordActivity"
+            android:screenOrientation="portrait" />
+        <!--资产分析-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.assetsrecord.AssetsRecordNewActivity"
+            android:screenOrientation="portrait" />
+        <!--回款日历-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.assetsrecord.ClanderActivity"
+            android:screenOrientation="portrait" />
+        <!--有奖任务-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.membercenter.AwardTaskActivity"
+            android:screenOrientation="portrait" />
+        <!--交易记录-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.tradelist.TradeListActivity"
+            android:screenOrientation="portrait" />
+        <!--我的 交易记录详情-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.tradelist.TradeDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!--回款记录-->
+        <activity android:name=".ui.mine.assetsrecord.BackAssetsRecordActivity2"
+            android:screenOrientation="portrait"/>
+        <!--待收收益-->
+        <activity android:name=".ui.mine.assetsrecord.UnCollectedIncomeActivity2"
+            android:screenOrientation="portrait"/>
+        <!--提现-->
+        <activity
+            android:name="com.hxxc.user.app.ui.mine.withdraw.WithDrawActivity"
+            android:screenOrientation="portrait" />
+
+        <!--帮助中心-->
+        <activity
+            android:name=".ui.mine.setting.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <!--聊天用-->
+        <activity
+            android:name=".ui.im.AMAPLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.im.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.hxxc.user.app"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!--百度定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!--分享 start-->
+
+        <!--QQ分享-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent1105151719" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--         微信回调activity -->
+        <!--分享-->
+        <activity
+            android:name="com.hxxc.user.app.share.ShareActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--新浪微博-->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+        <!--微信分享-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- wechat callback-->
+        <!--weixin 分享-->
+        <!--<receiver-->
+        <!--android:name="com.hxxc.user.app.share.AppRegister"-->
+        <!--android:permission="com.tencent.mm.plugin.permission.SEND">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--分享 end-->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="CRaRzAYlxajWNpHItDG6NGR8" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56ebc10167e58e9cfc000c73" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="877d9657ccfd5e953a4a37a7026a7c02" />
+
+        <!-- 高德地图-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e09af6a2b26c02086e9216bd07c960ae" />
+
+        <!-- 渠道号 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+
+        <!--百度统计-->
+        <!-- 您从百度网站获取的APP KEY，根据实际您的APP申请的APP_KEY进行修改 -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="mybkOzNEv3TlCbu2bFsyXeafPRsRSTyP" /> <!-- abcd1234 -->
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+    </application>
+
+</manifest>

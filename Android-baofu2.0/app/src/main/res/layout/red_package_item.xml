@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_red_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/red_package_n">
+
+            <TextView
+                android:id="@+id/tv_red_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp"
+                android:text="红包"/>
+            <TextView
+                android:id="@+id/tv_red_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp"
+                android:text="100"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_red_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:layout_weight="3"
+            android:background="@drawable/red_package_s">
+            <TextView
+                android:id="@+id/tv_red_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/red_ff60"
+                android:textSize="@dimen/dimen_14sp"
+                android:text="xxxxx\nxxxxxxxx\nxxxx"/>
+
+            <ImageView
+                android:id="@+id/img_red_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/red_been_selected"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5dp"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

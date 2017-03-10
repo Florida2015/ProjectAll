@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/bottom_bar_me_r1" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/bottom_bar_me_r1" android:state_focused="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/bottom_bar_me_r1" android:state_selected="true"/>
+    <!-- selected -->
+    <item android:drawable="@drawable/bottom_bar_me_g1"/>
+    <!-- normal -->
+    <!--<item android:drawable="@mipmap/bottom_bar_me_r1" android:state_pressed="true"/>-->
+    <!-- pressed -->
+    <!--<item android:drawable="@mipmap/bottom_bar_me_r1" android:state_focused="true"/>-->
+    <!-- focused -->
+    <!--<item android:drawable="@mipmap/bottom_bar_me_r1" android:state_selected="true"/>-->
+    <!-- selected -->
+    <!--<item android:drawable="@mipmap/bottom_bar_me_g1"/>-->
+    <!-- normal -->
+    
+
+</selector>

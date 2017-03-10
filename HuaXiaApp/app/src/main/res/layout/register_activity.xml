@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_ecec">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userinfor_login_bg"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/ed_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/userinfor_login_bg"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="16dp"
+                android:layout_toLeftOf="@+id/btn_register_code"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:hint="@string/register_phone"
+                android:maxLength="11"
+                style="@style/login_edit"
+                android:inputType="phone" />
+            <Button
+                android:id="@+id/btn_register_code"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/forget_code"
+                android:background="@color/transparent"
+                android:textSize="14sp"
+                android:textColor="@color/orangetogray"
+                />
+            <View
+                android:layout_width="1px"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_register_code"
+                android:background="@color/black_dcdc"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_dcdc" />
+        <EditText
+            android:id="@+id/ed_register_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userinfor_login_bg"
+            android:gravity="center_vertical"
+            style="@style/login_edit"
+            android:drawableLeft="@drawable/icon_verification"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:hint="@string/register_code"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_dcdc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userinfor_login_bg"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/ed_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/userinfor_login_bg"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/icon_pass"
+                android:drawablePadding="12dp"
+                android:layout_toLeftOf="@+id/img_btn_visiable"
+                android:paddingLeft="12dp"
+                android:gravity="center_vertical"
+                android:hint="密码6-20位字母数字组合"
+                android:maxLength="20"
+                style="@style/login_edit"
+                android:inputType="textPassword" />
+
+            <ImageButton
+                android:id="@+id/img_btn_visiable"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_open_eye"
+                android:background="@color/transparent"
+                android:textSize="14sp"
+                android:textColor="@color/orangetogray"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_dcdc" />
+        <LinearLayout
+            android:id="@+id/linear_argements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/register_deal"
+                android:textColor="@color/black_6666"
+                android:checked="true"
+                android:paddingLeft="5dp"
+                android:button="@drawable/check_register"
+                android:textSize="11sp"/>
+            <TextView
+                android:id="@+id/tv_btn_argment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《出借咨询与服务协议》"
+                android:background="@color/transparent"
+                android:textSize="11sp"
+                android:textColor="@color/blue_2299"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/tv_login_forget_pass"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_login_shape"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            style="@style/textWarmingInvest"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </LinearLayout>
+
+</ScrollView>

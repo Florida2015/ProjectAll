@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/view_toolbar" />
+
+    <com.hxxc.user.app.ui.discovery.search.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_address_search"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:hint="请输入关键字"
+        android:textColorHint="@color/gry_text"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+
+    <LinearLayout
+        android:id="@+id/curr_local_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black_aa_text"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:text="当前位置 " />
+
+        <TextView
+            android:id="@+id/curr_local_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/black_text"
+            android:text="上海市" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/grey_default"
+            android:dividerHeight="1px"
+            android:divider="@color/line_d" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text=""
+            android:textSize="38.0dip"
+            android:visibility="invisible"
+            android:background="@color/transparent"/>
+        <com.hxxc.user.app.ui.discovery.search.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"/>
+    </FrameLayout>
+</LinearLayout>

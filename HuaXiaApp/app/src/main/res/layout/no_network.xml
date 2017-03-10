@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_no_network"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/img_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:src="@drawable/icon_no_wifi"/>
+
+    <ProgressBar
+        android:id="@+id/probar_no_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/pull_refresh_update_loading_progressbar_anim"
+        />
+    <!--android:indeterminateDrawable="@drawable/shape_progress_bar"-->
+    <Button
+        android:id="@+id/btn_reloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:visibility="visible"
+        android:textSize="16dp"
+        android:textColor="@color/no_network"
+        android:text="点击屏幕 重新加载"/>
+
+      <com.framwork.loadingballs.BallView
+          android:id="@+id/ballview"
+          android:layout_margin="30dp"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:visibility="gone"
+          lib:balls="4"
+          lib:movement_cycle_time="5000"
+          lib:enable_size_animation="true"
+          lib:size_cycle_time="500"
+          lib:min_ball_size="12dp"
+          lib:max_ball_size="12dp"
+          lib:ball_colors="@array/colors"
+          lib:path="square"
+          android:layout_gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#d5d5d5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#cc333333</color>
+    <color name="blue">#15a4e8</color>
+    <color name="text">#333333</color>
+    <color name="black000">#000000</color>
+    <color name="red">#dc1e1d</color>
+
+    <color name="ls_orange">#FF9933</color>
+    <color name="gry">#999999</color>
+    <color name="gry_text">#66333333</color>
+
+    <color name="colorPrimary">#0B4282</color>
+    <color name="colorPrimaryDark">#0B4282</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent_half">#88ffffff</color>
+    <color name="transparent_58">#48ffffff</color>
+
+    <color name="grey_default">#F4F4F4</color>
+    <color name="line_d">#dddddd</color>
+    <color name="line_a">#aaaaaa</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="main_theme_color">#0195ff</color>
+    <color name="text_blue">#ff1f80d1</color>
+
+    <color name="blue_text">#ff1f80d1</color>
+    <color name="blue_text_low">#ff72aedd</color>
+
+    <color name="transparent_half_01">#13000000</color>
+    <color name="transparent_half_3f">#3f000000</color>
+    <color name="white_dffff">#dfffffff</color>
+    <color name="white_fafa">#fafafa</color>
+    <color name="white_abc7e">#abc7e7</color>
+    <color name="white_b0d1">#b0d1ed</color>
+    <color name="white_d2e5">#d2e5f5</color>
+    <color name="white_3e8e">#3e8ed6</color>
+    <color name="white_fce2">#fce2e3</color>
+    <color name="white_3289">#3289d3</color>
+
+    <color name="blue_15a4">#15a4e8</color>
+    <color name="blue_title">#0B4282</color>
+    <color name="blue_d2e6">#d2e6f6</color>
+    <color name="blue_1f80">#1f80d1</color>
+    <color name="blue_79b5">#79b5e4</color>
+
+    <color name="grey_f1f1">#F1F1F1</color>
+    <color name="grey_fafa">#FaFaFa</color>
+    <color name="grey_e2e2">#e2e2e2</color>
+    <color name="grey_3f82">#3f82c6</color>
+    <color name="grey_bcdb">#bcdbf3</color>
+    <color name="grey_aaaaaa">#aaaaaa</color>
+
+    <color name="line_e8e8">#e8e8e8</color>
+
+
+    <color name="blue_044675">#044675</color>
+    <color name="blue_0447">#044776</color>
+    <color name="blue_1447">#144776</color>
+    <color name="blue_15a5">#15a5e7</color>
+    <color name="blue_4f15a">#4f15a5e7</color>
+    <color name="blue_5199">#5199e4</color>
+
+    <color name="black_ff33">#ff333333</color>
+    <color name="orange_8ffe9">#8ffe9a33</color>
+    <color name="orange_fbb0">#fbb02b</color>
+
+
+    <color name="black_9999">#999999</color>
+    <color name="black_3333">#333333</color>
+    <color name="black_aaaa">#aaaaaa</color>
+    <color name="back_apla">#3f000000</color>
+    <color name="black_a9ce">#a9cef1</color>
+    <color name="back_6f">#6f000000</color>
+
+    <color name="tab_text_SelectColor">#ff1f80d1</color>
+    <color name="tab_text_UnselectColor">#aa333333</color>
+    <color name="tab_indicator_color">#ff1f80d1</color>
+
+    <color name="orange_text">#fbb02b</color>
+    <color name="grey_text">#aaaaaa</color>
+    <color name="black_text">#333333</color>
+    <color name="black_aa_text">#aa333333</color>
+    <color name="green_29cd">#29cdb5</color>
+    <color name="red_low_text">#ff938f</color>
+
+    <color name="background_default">#F4F4F4</color>
+
+    <color name="red_ff60">#ff605a</color>
+    <color name="red_ff61">#ff6159</color>
+    <color name="red_ffe1">#ffe1de</color>
+
+    <color name="grey_eeee">#eeeeee</color>
+
+    <color name="blue_1f76">#1f76be</color>
+    <color name="green_toggle">#4fd966</color>
+    <color name="grey_toggle">#d1d1d1</color>
+    <color name="grey_d8d8">#d8d8d8</color>
+
+    <color name="blue_dialog">#8fc0e8</color>
+</resources>

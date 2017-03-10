@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_10_color">
+
+    <RelativeLayout
+        android:id="@+id/relative_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:visibility="visible"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/img_btn_title_back"
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:src="@drawable/title_back"/>
+
+        <TextView
+            android:id="@+id/tv_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/orange_ff92"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_title_right"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            android:src="@drawable/share"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_b2b4"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_title_bar"
+        android:layout_above="@+id/LinearLayout_BottomBar"
+        android:background="@color/white_10_color"
+        android:gravity="top" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:background="@color/gray_20" />
+
+        <com.framwork.widget.BottomBar
+            android:id="@+id/bottom_bar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_textview_xutou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:textSize="@dimen/dimen_14sp"
+    android:textColor="@color/black_aaaa"
+    android:text="封闭期结束债权转让，本金与实际收益自动投资"
+    android:background="@color/white_fafa">
+
+</TextView>

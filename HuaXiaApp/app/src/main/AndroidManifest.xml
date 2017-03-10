@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huaxia.finance" >
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:name="com.huaxia.finance.DMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <!--android:theme="@style/AppThemeAppStart"-->
+        <activity
+            android:name="com.huaxia.finance.welcome.AppStartActivity"
+            android:launchMode="singleTop"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.welcome.GuideActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.MenuTwoActivity">
+            <intent-filter>
+                <action android:name="MenuTwoActivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.recommenddm.ActivtiesWebActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            tools:ignore="GoogleAppIndexingDeepLinkError">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <action android:name="ActivtiesWebActivity"/>
+
+            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW"/>-->
+            <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            <!--<data android:scheme="sdksample"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.AgreetBondWebActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.ProductExplainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="ProductExplainActivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.PayOrderActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.ChoiceBackDialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.ProductDetailActivity"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.CouponActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.PaySmsActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.PayWebActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.OrderListActvity">
+            <intent-filter>
+                <action android:name="OrderListActvity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.ApproveActivity"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.BankListActivity"/>
+        <!-- 我的 优惠券-->
+        <activity
+            android:name="com.huaxia.finance.minedm.CashVoucherActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.OrderDetailActivity">
+            <intent-filter>
+                <action android:name="OrderDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.huaxia.finance.minedm.UserBankListActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.minedm.AccountSetActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.minedm.LoginActivity">
+            <intent-filter>
+                <action android:name="LoginActivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--android:theme="@style/AppThemeAppStart"-->
+        <activity
+        android:name="com.huaxia.finance.minedm.RegisterActivity">
+            <intent-filter>
+                <action android:name="RegisterActivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--android:theme="@style/AppThemeAppStart"-->
+        <activity
+            android:name="com.huaxia.finance.minedm.ForgetPasswordActivity"
+            />
+        <activity
+            android:name="com.huaxia.finance.minedm.SetPasswordActiviity"
+            />
+        <!--android:theme="@style/AppThemeAppStart"-->
+        <activity
+            android:name="com.huaxia.finance.minedm.AgreementActivity"/>
+        <activity
+            android:name="com.huaxia.finance.minedm.RegisterSuccessActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.moredm.MoreWebActivity"/>
+
+        <activity
+            android:name="com.huaxia.finance.moredm.NoticeListActivity"/>
+        <activity
+            android:name="com.huaxia.finance.moredm.NoticeDetailActivity"/>
+        <activity
+            android:name="com.huaxia.finance.mangemoneydm.ContinueOrderActivity"/>
+
+
+
+        <activity
+            android:name="com.huaxia.finance.base.WebActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            tools:ignore="GoogleAppIndexingDeepLinkError">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+                <!--<data android:scheme="sdksample"/>-->
+            <!--</intent-filter>-->
+            </activity>
+
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1104922155" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+
+        <!--新浪微博分享-->
+        <activity
+            android:name="com.huaxia.finance.minedm.ShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+
+
+
+
+<!--微信分享-->
+        <activity
+            android:name="com.huaxia.finance.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            </activity>
+        <receiver
+            android:name="com.huaxia.finance.share.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.huaxia.finance.service.DownloadService" >
+            <intent-filter>
+                <action android:name="com.huaxia.finance.service.start" />
+            </intent-filter>
+        </service>
+
+
+        <!-- 友盟统计推送信息设置-->
+        <meta-data android:value="@string/umeng_appkey" android:name="UMENG_APPKEY"/>
+        <!-- Channel ID来标识APP的推广渠道-->
+        <!-- WX_YING_YONG_BAO WANJIAOJIA BAIDU 360DEVELOP XIAOMI PP lenovo-->
+        <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="@string/umeng_appscret" />
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" />-->
+
+    </application>
+
+</manifest>

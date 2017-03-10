@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/view_continued"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_contound"
+        android:background="@color/transparent_half_3f"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_contound"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/cTabLayout_continued"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/btn_no_continued"
+            android:layout_width="58dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="不续投"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_no_continued"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="续投设置"
+            android:background="@drawable/bg_white_to_gray"/>
+
+        <ImageButton
+            android:id="@+id/btn_no_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_5dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ico_close"
+            android:background="@color/transparent"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_f1f1"/>
+    </RelativeLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/cTabLayout_continued"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/viewpager_continued"
+        android:background="@color/white"
+        fancy:tl_iconVisible="false"
+        fancy:tl_indicator_color="@color/blue_15a4"
+        fancy:tl_indicator_height="1dp"
+        fancy:tl_textSelectColor="@color/blue_1f80"
+        fancy:tl_textUnselectColor="@color/black_3333"
+        fancy:tl_textsize="15sp"
+        fancy:tl_underline_gravity="BOTTOM"
+        fancy:tl_underline_color="@color/blue_15a4"
+        fancy:tl_underline_height="0dp">
+    </com.flyco.tablayout.CommonTabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_continued"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/grey_f1f1"
+        android:layout_above="@+id/btn_order_contund_next"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_order_contund_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/blue_text"
+        fancy:fb_focusColor="@color/blue_0447"
+        fancy:fb_radius="0dp"
+        fancy:fb_text="确认"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" />
+
+</RelativeLayout>

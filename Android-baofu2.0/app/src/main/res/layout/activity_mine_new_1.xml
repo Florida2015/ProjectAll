@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_mine_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue_1f80">
+
+        <ImageButton
+            android:id="@+id/toolbar_mine"
+            android:layout_width="42dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_personal_center" />
+
+        <LinearLayout
+            android:id="@+id/linear_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_toRightOf="@+id/toolbar_mine"
+            android:background="@drawable/white_fa"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_member_level_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_tip_vip"
+                android:gravity="center|bottom"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:paddingTop="2dp"
+                android:text="1"
+                android:textColor="@color/orange_text"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_member_level_name_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingLeft="@dimen/dimen_1dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:paddingTop="1dp"
+                android:text="财气值 | 0"
+                android:textColor="@color/white_b0d1"
+                android:textSize="@dimen/dimen_12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/toolbar_setting"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@+id/toolbar_wearing"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_set"
+            android:visibility="visible" />
+        <!--<ImageButton-->
+        <!--android:id="@+id/toolbar_wearing"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@mipmap/icon_message"-->
+        <!--android:visibility="visible" />-->
+
+        <RelativeLayout
+            android:id="@+id/toolbar_wearing"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/toolbar_iv_message2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/message" />
+
+
+            <TextView
+                android:id="@+id/tv_unread2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cycle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_11sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.hxxc.user.app.widget.trecyclerview.TRecyclerView
+        android:id="@+id/recyclerview_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="0dp"
+        android:layout_below="@+id/relative_mine_title"
+        android:background="@color/transparent"
+        android:visibility="visible" />
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_sign_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/black_aaaa"
+        android:text="2016年10月"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_2dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="@drawable/gray_sign">
+        <TextView
+            style="@style/style_sign"
+            android:text="日"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="一"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="二"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="三"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="四"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="五"/>
+        <TextView
+            style="@style/style_sign"
+            android:text="六"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:numColumns="7"
+        android:gravity="center"
+        android:cacheColorHint="@color/white"
+        android:columnWidth="@dimen/actionbar_size"/>
+</LinearLayout>

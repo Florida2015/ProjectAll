@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+//    useLibrary 'org.apache.http.legacy'
+//buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.huaxia.finance"
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 7
+        versionName "v2.0.5"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+        // AndroidManifest.xml 里面UMENG_CHANNEL的value为 ${UMENG_CHANNEL_VALUE}
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "channel_name"]
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resources']
+            aidl.srcDirs = ['src/main/aidl']
+            renderscript.srcDirs = ['src/maom']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError false
+    }
+    //签名
+    signingConfigs {
+//        debug {
+//            storeFile file("/home/lippi/.android/debug.keystore")
+//        }
+        relealse {
+            //这样写就得把demo.jk文件放在项目目录
+            storeFile file("huaxiakeystore.jks")
+            storePassword "huaxiafinance"
+            keyAlias "huaxia"
+            keyPassword "huaxiafinance"
+        }
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.relealse
+        }
+    }
+//渠道Flavors，配置不同风格的app
+    productFlavors {
+        huaxia {}
+        wandoujia {}
+        tencent {}
+        baidu {}
+        "360" {}
+        xiaomi {}
+        pptaobao {}
+        lenovo {}
+        huawei {}
+    }
+    //批量配置
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace("-release.apk", "-${defaultConfig.versionName}_${defaultConfig.versionCode}.apk")
+                output.outputFile = new File(outputFile.parent, fileName.replace("app","huaxia"))
+            }
+        }
+    }
+
+
+}
+//compile fileTree(dir: 'libs', include: ['*.jar'])
+//compile 'com.android.support:appcompat-v7:22+'
+//compile files('libs/weiboSDKCore_3.1.2.jar')
+//compile files('libs/libammsdk.jar')
+//compile files('libs/gson-2.5.jar')
+//compile files('libs/open_sdk_r5509_lite.jar')
+//compile files('libs/mta-sdk-1.6.2.jar')
+//compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+//compile files('libs/nineoldandroids-library-2.4.0.jar')
+//compile files('libs/umeng-analytics-v5.6.4.jar')
+//compile files('libs/com.umeng.message_v2.7.0.jar')
+dependencies {
+    compile project(':PushSDK')
+    compile project(':BannerLayout')
+    compile project(':switchbutton')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'org.apache.httpcomponents:httpcore:4.4.2'
+//    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/umeng-analytics-v5.6.4.jar')
+    compile files('libs/com.umeng.message_v2.7.0.jar')
+}

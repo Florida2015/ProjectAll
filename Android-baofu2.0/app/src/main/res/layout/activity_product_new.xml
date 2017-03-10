@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hxxc.user.app.widget.indicator.TitleIndicator
+        android:id="@+id/activity_title_indicator"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@color/white"
+        android:layout_height="45dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_title_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_default"/>
+</LinearLayout>

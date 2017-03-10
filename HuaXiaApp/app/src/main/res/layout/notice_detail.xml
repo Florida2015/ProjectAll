@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<include-->
+        <!--android:id="@+id/include_menu"-->
+        <!--layout="@layout/base_activity"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/black_ecec"/>
+
+            <TextView
+                android:id="@+id/tv_notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black_3333"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textSize="16sp"
+                android:text="通知"/>
+            <TextView
+                android:id="@+id/tv_notice_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black_9999"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:text="2016-10-2"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black_dcdc"/>
+
+            <TextView
+                android:id="@+id/tv_notice_context"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black_3333"
+                android:gravity="left"
+                android:background="@color/white"
+                android:textSize="15sp"
+                android:text="通知"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

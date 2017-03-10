@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_user_bank">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:id="@+id/img_icon_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/bank_gongshang"
+                android:background="@color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/img_icon_bank"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="建设银行"
+                android:textSize="14sp"
+                android:textColor="@color/black_3333"
+                android:background="@color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tv_bank_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bank_name"
+                android:layout_toRightOf="@+id/img_icon_bank"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:singleLine="true"
+                android:text="单笔限额50万，单日50万"
+                android:textSize="11sp"
+                android:textColor="@color/black_9999"
+                android:background="@color/transparent"
+                />
+            <TextView
+                android:id="@+id/tv_bank_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="2dp"
+                android:singleLine="true"
+                android:text="设为默认卡"
+                android:textSize="11sp"
+                android:textColor="@color/black_9999"
+                android:background="@color/transparent"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/black_ecec"/>
+
+        <TextView
+            android:id="@+id/tv_bank_cardno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:text="xxxx xxxx xxxx 5639"
+            android:textSize="16sp"
+            android:textColor="@color/black_9999"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+</LinearLayout>

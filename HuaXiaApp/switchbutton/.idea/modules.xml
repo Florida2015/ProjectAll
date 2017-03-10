@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BannerLayout/BannerLayout.iml" filepath="$PROJECT_DIR$/../BannerLayout/BannerLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CustomProject_1.iml" filepath="$PROJECT_DIR$/../CustomProject_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UnderLibrary/UnderLibrary.iml" filepath="$PROJECT_DIR$/../UnderLibrary/UnderLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WidgetLibrary/WidgetLibrary.iml" filepath="$PROJECT_DIR$/../WidgetLibrary/WidgetLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mqtt/mqtt.iml" filepath="$PROJECT_DIR$/../mqtt/mqtt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchbutton.iml" filepath="$PROJECT_DIR$/switchbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../weixin/weixin.iml" filepath="$PROJECT_DIR$/../weixin/weixin.iml" />
+    </modules>
+  </component>
+</project>

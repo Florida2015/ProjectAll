@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="88dp">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ico_mall"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:textColor="@color/text"
+        android:layout_marginBottom="8dp"
+        android:textSize="13sp"
+        android:text="积分商城" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ico_stores"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:textColor="@color/text"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp"
+        android:text="服务网点" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ico_gift"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:textColor="@color/text"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp"
+        android:text="活动中心" />
+</LinearLayout>

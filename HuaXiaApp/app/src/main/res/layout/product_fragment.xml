@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black_ecec">
+
+    <com.framwork.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/pull_listview_product"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:scrollbars="none"
+        android:divider="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_no_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/icon_no_wifi"/>
+
+        <TextView
+            android:id="@+id/tv_reloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_empty"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:visibility="visible"
+            android:textSize="16sp"
+            android:textColor="@color/no_network"
+            android:text="点击屏幕 重新加载"/>
+
+        <com.framwork.loadingballs.BallView
+            android:id="@+id/ballview"
+            android:layout_margin="30dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            lib:balls="4"
+            lib:movement_cycle_time="5000"
+            lib:enable_size_animation="true"
+            lib:size_cycle_time="500"
+            lib:min_ball_size="12dp"
+            lib:max_ball_size="12dp"
+            lib:ball_colors="@array/colors"
+            lib:path="square"
+            android:layout_gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+
+</RelativeLayout>

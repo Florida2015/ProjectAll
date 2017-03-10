@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">华夏信财</string>
+
+    <string name="telphone">4000-466-600</string>
+    <string name="location_fetching">获取中……</string>
+
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"请绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少需要连接4个点，请重新绘制"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+
+    <string name="text_mine_tip">"实际到账收益才会计入累计收益"</string>
+
+    <string name="text_order_detail">"续投设置成功"</string>
+    <string name="text_order_cancal_contine">"已取消续投"</string>
+
+    <string name="text_continue_y">"订单到期，本金和利息自动续投。"</string>
+    <string name="text_continue_x">"订单到期，本金自动续投。"</string>
+
+
+    <!--     宝付支付增加银行数据 -->
+
+    <!--     连连支付銀行數據 -->
+    <!--     <string name="pdfz">上海浦东发展银行</string> -->
+    <!--     宝付支付无 -->
+    <!--     宝付支付无 -->
+    <!--     宝付支付无-->
+
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="download_success">下载完成，点击安装</string>
+
+    <string name="text_register_phone">请输入手机号码</string>
+    <string name="text_register_code">请输入验证码</string>
+    <string name="text_register_pass">请输入6-36位数字与字母</string>
+    <string name="text_register_pass_again">请再次输入6-36位数字与字母</string>
+    <string name="text_register_pass_1">请输入6-36位密码</string>
+    <string name="text_set_pass">请输入6-36位新密码</string>
+    <string name="text_set_pass_again">请再次输入6-36位新密码</string>
+    <string name="text_set_pass_r">请输入6-36位字母与数字组合密码</string>
+    <string name="text_set_pass_r_n">请输入6-36位字母与数字组合新密码</string>
+    <string name="text_set_n">请再次输入新密码</string>
+
+    <string name="text_accout_underwriting">账户资金安全由太平洋保险承保</string>
+
+    <string name="text_lend_text">用户在华夏信财参与出借均可赚取积分，会员身份越高可赚取的积分越多，计算公式如下：</string>
+
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+
+    <string name="errcode_success">发送成功</string>
+
+    <string name="text_waring">市场有风险 投资需谨慎</string>
+
+    <string name="text_login_out">此账号异地登录</string>
+
+    <string name="text_email">kf@huaxiafinance.com</string>
+
+</resources>

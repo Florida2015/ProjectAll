@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/about_us" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:arr="false"
+            app:left="官方微信"
+            app:right="微信号：huaxiafinance" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@color/line_d" />
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:arr="false"
+            app:left="邮箱"
+            app:right="@string/text_email" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@color/line_d" />
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:arr="false"
+            app:right_color="@color/blue_text"
+            app:left="财富热线"
+            app:right="@string/telphone" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@color/line_d" />
+
+        <RelativeLayout
+            android:id="@+id/app_update"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="检查更新"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:id="@+id/iv_arr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/ico_arr"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/bespeak_login_progress"/>
+
+            <TextView
+                android:id="@+id/tv_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#88333333"
+                android:textSize="@dimen/dimen_14sp"
+                android:text="已是最新版"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_1px"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="客服工作时间为：工作日9:00-18:00"
+        android:textColor="@color/grey_text"
+        android:textSize="@dimen/dimen_13sp" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxxc.user.app.widget.verticalpager.DragDialogLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_not_use"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="不使用"
+                android:textColor="@color/grey_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择使用红包"
+                android:textColor="@color/grey_text"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1px"
+            android:background="@color/line_d" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/imageview_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@null"
+                    android:src="@drawable/empty_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="150dp"
+                    android:text="暂无记录"
+                    android:textColor="#aa666666"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <com.hxxc.user.app.widget.verticalpager.CustRecycleView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="@dimen/dimen_20dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+</com.hxxc.user.app.widget.verticalpager.DragDialogLayout>

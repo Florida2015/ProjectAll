@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        android:visibility="gone"
+        android:background="@color/blue_1f80">
+
+        <TextView
+            android:id="@+id/tv_cumulative_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="600\n累计收益"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white_dffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_profit_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="600\n累计收益"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white_dffff"/>
+            <TextView
+                android:id="@+id/tv_profit_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="600\n累计收益"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/white_dffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/cTabLayout_trade_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/blue_15a4"
+        app:tl_indicator_height="1dp"
+        app:tl_textSelectColor="@color/blue_1f80"
+        app:tl_textUnselectColor="@color/black"
+        app:tl_textsize="15sp"
+        app:tl_underline_gravity="BOTTOM"
+        app:tl_underline_color="@color/blue_15a4"
+        app:tl_underline_height="0dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_trade_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

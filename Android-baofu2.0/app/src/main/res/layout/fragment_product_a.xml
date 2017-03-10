@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxxc.user.app.widget.verticalpager.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/grey_text"
+            android:text="华信财简介"
+            android:id="@+id/tv_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"/>
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="预期年化收益"
+            app:right="" />
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="封闭期"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="起售时间"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="起息日"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="退出日"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="付息方式"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="保障方式"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:background_color="grey"
+            app:left="退出方式"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left="标的介绍"
+            app:right="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/grey_text"
+            android:text="购买限制"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"/>
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="起投金额"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="递增金额"
+            app:right="" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="单笔最高可投"
+            app:right="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/grey_text"
+            android:text="相关费用"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"/>
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_21"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="加入费用"
+            app:right="0元" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_22"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="管理费用"
+            app:right="0元" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_23"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="退出费用"
+            app:right="0元" />
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="提前退出费用"
+            app:right="0元" />
+
+    </LinearLayout>
+
+</com.hxxc.user.app.widget.verticalpager.CustScrollView>

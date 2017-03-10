@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+
+    <TextView
+        android:id="@+id/tv_suplus_time"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:background="@color/blue_dialog"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:text="请在05:00分钟之内支付，否则订单将自动取消"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawablePadding="5dp"
+        android:text="支付方式"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_type"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_15dp">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_toRightOf="@+id/iv_bank"
+            android:text="中国工商银行（尾号0405）"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_toRightOf="@+id/iv_bank"
+            android:text="单笔限额5万，单日限额5万"
+            android:textColor="@color/grey_text"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_arr" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawablePadding="5dp"
+        android:text="支付信息"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出借金额"
+                android:textColor="@color/black_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:text="0元"
+                android:textColor="@color/grey_text"
+                android:textSize="@dimen/dimen_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@color/line_d" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="@dimen/dimen_15dp"-->
+            <!--android:paddingRight="@dimen/dimen_15dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="账户余额"-->
+                <!--android:textColor="@color/black_text"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_surplus_account"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/dimen_15dp"-->
+                <!--android:gravity="right"-->
+                <!--android:text="10000元"-->
+                <!--android:textColor="@color/grey_text" />-->
+
+            <!--<com.hxxc.user.app.widget.MyCheckBox-->
+                <!--android:id="@id/checkBox"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_1px"-->
+            <!--android:layout_marginLeft="@dimen/dimen_15dp"-->
+            <!--android:layout_marginRight="@dimen/dimen_15dp"-->
+            <!--android:background="@color/line_d" />-->
+
+        <com.hxxc.user.app.widget.LeftAndRightTextView
+            android:id="@+id/tv_redpackage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:arr="true"
+            app:left="红包抵扣"
+            app:right="0元" />
+
+    </LinearLayout>
+
+    <com.hxxc.user.app.widget.LeftAndRightTextView
+        android:id="@+id/tv_pay_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:left="实际支付"
+        app:right="0元"
+        app:right_color="@color/orange_text" />
+
+
+    <com.hxxc.user.app.widget.MyClickButton
+        android:id="@+id/step_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="20dp"
+        app:itbackground="blue"
+        app:text="立即支付"
+        app:textColor="#ffffff"
+        app:textSize="@dimen/dimen_btn_18sp" />
+
+    <View
+        android:layout_width="@dimen/dimen_1px"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:text="市场有风险 出借需谨慎"
+        android:textColor="@color/grey_text"
+        android:textSize="@dimen/dimen_12sp" />
+</LinearLayout>

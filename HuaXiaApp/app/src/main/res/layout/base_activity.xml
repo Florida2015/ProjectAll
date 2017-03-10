@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_base_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relative_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:visibility="visible"
+        android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/img_btn_title_back"
+        android:layout_width="42dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/transparent"
+        android:src="@drawable/title_back"/>
+
+    <TextView
+        android:id="@+id/tv_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="标题"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/orange_ff92"
+        android:textSize="16sp"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_title_right"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:src="@drawable/share"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_b2b4"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/context_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_title_bar">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        xmlns:lib="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relative_no_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:visibility="visible"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/icon_no_wifi"/>
+
+        <TextView
+            android:id="@+id/tv_reloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_empty"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/no_network"
+            android:text="点击屏幕 重新加载"/>
+
+        <com.framwork.loadingballs.BallView
+            android:id="@+id/ballview"
+            android:layout_margin="30dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            lib:balls="4"
+            lib:movement_cycle_time="5000"
+            lib:enable_size_animation="true"
+            lib:size_cycle_time="500"
+            lib:min_ball_size="12dp"
+            lib:max_ball_size="12dp"
+            lib:ball_colors="@array/colors"
+            lib:path="square"
+            android:layout_gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+</RelativeLayout>

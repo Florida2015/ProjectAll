@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingLeft="@dimen/dimen_25dp"
+    android:paddingRight="@dimen/dimen_25dp"
+    android:background="@color/blue_1f76">
+    <ImageView
+        android:id="@+id/img_member_tip"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/tip_none"/>
+    <TextView
+        android:id="@+id/tv_member_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:singleLine="true"
+        android:textColor="@color/transparent_58"
+        android:textSize="12sp"
+        android:text="专属顾问"/>
+</LinearLayout>

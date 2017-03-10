@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_old_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="请输入原始密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/black_aaaa"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/ed_seting_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:maxLength="36"
+            android:hint="@string/text_set_pass_r_n"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/black_aaaa"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"
+            android:layout_marginLeft="@dimen/dimen_15dp"/>
+
+        <EditText
+            android:id="@+id/ed_seting_password_again"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:maxLength="36"
+            android:hint="@string/text_set_n"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/black_aaaa"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--<mehdi.sakout.fancybuttons.FancyButton-->
+    <!--xmlns:fancy="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/btn_seting_pass"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_45dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:padding="12dp"-->
+    <!--fancy:fb_borderColor="@color/white"-->
+    <!--fancy:fb_borderWidth="0dp"-->
+    <!--fancy:fb_defaultColor="@color/blue_5199"-->
+    <!--fancy:fb_focusColor="@color/blue_4f15a"-->
+    <!--fancy:fb_radius="5dp"-->
+    <!--fancy:fb_text="确认"-->
+    <!--fancy:fb_textSize="16sp"-->
+    <!--fancy:fb_textColor="@color/white" />-->
+
+    <com.hxxc.user.app.widget.MyClickButton
+        android:id="@+id/update_password_btn"
+        style="@style/bespeak_submit_btn3"
+        qun:itbackground="blue"
+        qun:text="修改密码"
+        qun:textSize="@dimen/dimen_btn_18sp" />
+</LinearLayout>

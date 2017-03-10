@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:background="@drawable/buttom_bg"
+    android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_item_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="@dimen/padding_magern"
+                android:paddingTop="@dimen/padding_magern"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/bottom_bar_icon_selector_first"
+                android:text="@string/bottom_item_first"
+                android:textColor="@color/bottom_item_text_selector"
+                android:textSize="@dimen/text_buttombar" />
+            <!-- 提示语 -->
+
+            <TextView
+                android:id="@+id/tv_warming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/indicate_value"
+                android:textColor="@color/red_10"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:background="@color/gray_20" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_item_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="@dimen/padding_magern"
+                android:paddingTop="@dimen/padding_magern"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/bottom_bar_icon_selector_second"
+                android:text="@string/bottom_item_second"
+                android:textColor="@color/bottom_item_text_selector"
+                android:textSize="@dimen/text_buttombar" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:background="@color/gray_20" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_item_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="@dimen/padding_magern"
+                android:paddingTop="@dimen/padding_magern"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/bottom_bar_icon_selector_three"
+                android:text="@string/bottom_item_three"
+                android:textColor="@color/bottom_item_text_selector"
+                android:textSize="@dimen/text_buttombar" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:background="@color/gray_20" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <!-- android:background="@drawable/bottom_item_selector" -->
+
+            <Button
+                android:id="@+id/btn_item_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="@dimen/padding_magern"
+                android:paddingTop="@dimen/padding_magern"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/bottom_bar_icon_selector_four"
+                android:text="@string/bottom_item_four"
+                android:textColor="@color/bottom_item_text_selector"
+                android:textSize="@dimen/text_buttombar" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:background="@color/gray_20" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <!-- android:background="@drawable/bottom_item_selector" -->
+
+            <Button
+                android:id="@+id/btn_item_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="@dimen/padding_magern"
+                android:paddingTop="@dimen/padding_magern"
+                android:drawablePadding="@dimen/padding_magern"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/bottom_bar_icon_selector_five"
+                android:text="@string/bottom_item_five"
+                android:textColor="@color/bottom_item_text_selector"
+                android:textSize="@dimen/text_buttombar" />
+        </RelativeLayout>
+    <!--android:background="@color/transparent"-->
+</LinearLayout>

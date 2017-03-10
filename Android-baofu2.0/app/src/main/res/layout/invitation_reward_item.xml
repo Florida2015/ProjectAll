@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relative_invitation_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:background="@color/grey_f1f1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="邀请好友"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="奖励金额"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_invitation_record_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_reward_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_ff33"
+            android:textSize="@dimen/dimen_16sp"
+            android:text="某某"/>
+        <TextView
+            android:id="@+id/tv_reward_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reward_name"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="2016-11-20 10:11"/>
+
+        <TextView
+            android:id="@+id/tv_reward_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_16sp"
+            android:text="100"/>
+        <TextView
+            android:id="@+id/tv_reward_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_reward_money"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="来源："/>
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/grey_f1f1"/>
+</LinearLayout>

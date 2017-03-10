@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<include-->
+        <!--android:id="@+id/include_menu"-->
+        <!--layout="@layout/base_activity"/>-->
+
+    <com.framwork.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/pull_listview_notice"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+
+    <include layout="@layout/no_network"
+        />
+
+</LinearLayout>

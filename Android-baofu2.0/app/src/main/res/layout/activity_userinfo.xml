@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/icon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_arr"
+                    android:visibility="visible" />
+
+                <com.hxxc.user.app.widget.CircleImageView
+                    android:id="@+id/user_icon_userinfo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/imageView1"
+                    android:src="@mipmap/icon_my_head" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="真实姓名"
+                app:right="尚未认证" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="性别"
+                app:right="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="出生年月"
+                app:right="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="户籍地"
+                app:right="请选择所在省市" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arr="true"
+                app:left="户籍地址"
+                app:right_hint="请填写户籍地址" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background_default" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="教育水平"
+                app:right="请选择" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="婚姻状况"
+                app:right="请选择婚姻状况" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="职业类型"
+                app:right_hint="请选择职业类型" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                app:arr="true"
+                app:left="居住地"
+                app:right="请选择所在省市" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/line_d" />
+
+            <com.hxxc.user.app.widget.LeftAndRightTextView
+                android:id="@+id/tv_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arr="true"
+                app:left="居住地址"
+                app:right_hint="请填写居住地址" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/background_default" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

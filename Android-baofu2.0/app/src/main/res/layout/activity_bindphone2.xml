@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="为了您的账户安全，请选择一种方式核实身份。"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp" />
+
+    <com.hxxc.user.app.widget.LeftAndRightTextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:arr="true"
+        app:left="手机校验"
+        app:right="" />
+
+    <com.hxxc.user.app.widget.LeftAndRightTextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:arr="true"
+        app:left="提交人工审核"
+        app:right="预计需要2个工作日" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.framwork.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/pull_listview_cashvour_over"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:divider="@null"/>
+    <TextView
+        android:id="@+id/tv_empty_over_nolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="5dp"
+        android:drawableTop="@drawable/icon_empty"
+        android:drawablePadding="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="暂无过期优惠券！"
+        android:textSize="12sp"
+        android:textColor="@color/black_6666"
+        android:background="@color/transparent"
+        />
+    <!--<include layout="@layout/no_network"-->
+        <!--/>-->
+
+</RelativeLayout>

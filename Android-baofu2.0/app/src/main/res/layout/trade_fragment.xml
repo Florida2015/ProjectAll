@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <com.hxxc.user.app.widget.trecyclerview.TRecyclerView
+        android:id="@+id/tvCyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_integral_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:background="@color/grey_f1f1">
+        <TextView
+            android:id="@+id/tv_integral_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black_aaaa"
+            android:text="1月累计"
+            />
+        <TextView
+            android:id="@+id/tv_integral_useing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/black_aaaa"
+            android:text="回款:0.00"
+            />
+        <TextView
+            android:id="@+id/tv_integral_getting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_integral_useing"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:visibility="visible"
+            android:textColor="@color/black_aaaa"
+            android:text="出借:0.00"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

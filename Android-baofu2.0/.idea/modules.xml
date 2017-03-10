@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-baofu2.0.iml" filepath="$PROJECT_DIR$/Android-baofu2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Im/Im.iml" filepath="$PROJECT_DIR$/Im/Im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baserecyclerviewadapterhelper/baserecyclerviewadapterhelper.iml" filepath="$PROJECT_DIR$/baserecyclerviewadapterhelper/baserecyclerviewadapterhelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomindicator/bottomindicator.iml" filepath="$PROJECT_DIR$/bottomindicator/bottomindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crecyclerview/crecyclerview.iml" filepath="$PROJECT_DIR$/crecyclerview/crecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/numberprogressbar/numberprogressbar.iml" filepath="$PROJECT_DIR$/numberprogressbar/numberprogressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinnedsectionitemdecoration/pinnedsectionitemdecoration.iml" filepath="$PROJECT_DIR$/pinnedsectionitemdecoration/pinnedsectionitemdecoration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchbutton/switchbutton.iml" filepath="$PROJECT_DIR$/switchbutton/switchbutton.iml" />
+    </modules>
+  </component>
+</project>

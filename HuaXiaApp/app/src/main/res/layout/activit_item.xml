@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/black_ecec">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black_ecec"/>
+    
+    <TextView
+        android:id="@+id/tv_activities_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="投资得iPhone"
+        android:textSize="15sp"
+        android:textColor="@color/black_3333"
+        android:background="@color/transparent"
+        />
+
+    <ImageView
+        android:id="@+id/img_activit_icon"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/ads_loading" />
+    <TextView
+        android:id="@+id/tv_activities_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_activities_more"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:text="更多活动策划中..."
+        android:textSize="13sp"
+        android:textColor="@color/black_3333"
+        android:background="@color/transparent"
+        />
+    <View
+        android:id="@+id/view_bottom_activity"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:visibility="gone"
+        android:background="@color/black_ecec"/>
+</LinearLayout>

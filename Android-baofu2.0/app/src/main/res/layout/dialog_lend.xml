@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:layout_marginLeft="@dimen/dimen_5dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_member">
+
+    <ImageButton
+        android:id="@+id/img_btn_close_member"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_gravity="right"
+        android:src="@mipmap/ico_close"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black"
+        android:text="出借规则"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/blue_1f80"
+        android:text="阶梯积分"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/black_aaaa"
+        android:text="@string/text_lend_text"/>
+
+    <ImageView
+        android:id="@+id/img_member_lend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        />
+
+    <WebView
+        android:id="@+id/web_integer"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:minHeight="225dp"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@color/grey_f1f1"
+        tools:ignore="WebViewLayout" />
+    <ProgressBar
+        android:id="@+id/progressbar_rule_lend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="85dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/bespeak_login_progress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/btn_member_lend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/white"
+        android:text="去做任务"
+        android:background="@drawable/blue_sign"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="@dimen/dimen_15dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:background="@color/grey_default"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/text"
+        android:text="热烈庆祝华夏信财。。。"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_12sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/grey_text"
+        android:text="热烈庆祝华夏信财。。。"/>
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"/>
+</LinearLayout>
