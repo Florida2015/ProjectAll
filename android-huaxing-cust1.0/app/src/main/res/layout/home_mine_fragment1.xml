@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/toolbar_mine"
+            android:layout_width="42dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="-10dp"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_personal_center"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/toolbar_warning"
+            android:layout_width="42dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_message"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/toolbar_setting"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_set"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/home_mine_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_fafa"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_recharge"
+                        style="@style/style_home_mine"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="充值"/>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1px"
+                        android:layout_height="20dp"
+                        android:background="@color/line_d" />
+
+                    <TextView
+                        android:id="@+id/tv_withdraw_cash"
+                        style="@style/style_home_mine"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="提现" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_recharge_out"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/ico_lend"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="我的出借" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_d" />
+
+                    <TextView
+                        android:id="@+id/tv_funds_detail"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/ico_detail"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="资金明细" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_d" />
+
+                    <TextView
+                        android:id="@+id/tv_auto_bid"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/ico_tender"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="自动投标" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_d" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_e_account"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/ico_e_acount"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="E账户" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:background="@color/line_e8e8" />
+
+                    <TextView
+                        android:id="@+id/tv_my_financial"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/ico_financial_planner"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:visibility="visible"
+                        android:text="我的理财师" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_d" />
+
+                    <TextView
+                        android:id="@+id/tv_about_us"
+                        style="@style/style_home_mine_item"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/icon_more"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="更多" />
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_d" />
+                    <TextView
+                        style="@style/style_home_mine"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38sp"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity = "center"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:textSize = "13sp"
+                    android:textColor ="@color/black_aaaa"
+                    android:text="市场有风险，投资需谨慎" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

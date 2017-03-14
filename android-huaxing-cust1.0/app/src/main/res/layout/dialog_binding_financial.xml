@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent_half_3f">
+
+    <LinearLayout
+        android:id="@+id/linear_dialog_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dimen_38dp"
+        android:layout_marginLeft="@dimen/dimen_38dp"
+        android:paddingTop="@dimen/dimen_25dp"
+        android:gravity="center"
+        android:background="@drawable/back_binding_financial">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black_3333"
+            android:text="提示"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/black_3333"
+            android:text="确认绑定该顾问作为您的理财师?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_binding_cancal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/dimen_16sp"
+                android:text="取消"
+                android:typeface="monospace"
+                android:background="@drawable/white_binding_top"/>
+            <Button
+                android:id="@+id/btn_binding_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp"
+                android:text="确定"
+                android:typeface="monospace"
+                android:background="@drawable/blue_binding_top"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

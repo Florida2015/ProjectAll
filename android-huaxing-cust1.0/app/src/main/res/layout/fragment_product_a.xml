@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxxc.huaxing.app.wedgit.verticalpager.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/grey_text"
+            android:text="借款人信息"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"/>
+
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="姓名"
+            app:right="" />
+
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="年龄"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="婚姻状况"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="教育程度"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="工作性质"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="单位性质"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="所属行业"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="职位名称"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="月收入"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="房产类型"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="户籍地址"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="现居地址"
+            app:right="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/grey_text"
+            android:text="车辆信息"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_d"/>
+
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_21"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="车辆品牌"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_22"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="车辆型号"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_23"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="车身颜色"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="购买价格"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_25"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="行驶公里数"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_26"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="购买日期"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_27"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:left="有无事故"
+            app:right="" />
+        <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+            android:id="@+id/tv_28"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            app:background_color="grey"
+            app:left="是否二手车"
+            app:right="" />
+
+    </LinearLayout>
+
+</com.hxxc.huaxing.app.wedgit.verticalpager.CustScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="@dimen/dimen_15dp"
+    android:paddingBottom="@dimen/dimen_15dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linear_capitail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@mipmap/icon_circle">
+        <TextView
+            android:id="@+id/tv_income_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textColor="@color/black_text"
+            android:text="0.00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/grey_text"
+            android:text="预期收益(元)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="@color/blue_text"
+                android:text="总资产(元)"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_total_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/blue_text"
+                android:text="0.00"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="@color/blue_text"
+                android:text="可用余额(元)"/>
+            <TextView
+                android:id="@+id/tv_remainder_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/blue_text"
+                android:text="0.00"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:fitsSystemWindows="true"
+        app:banner_placeholderDrawable="@mipmap/banner"
+        app:banner_indicatorGravity="bottom|center_horizontal"
+        app:banner_pointContainerBackground="@color/transparent"
+        app:banner_transitionEffect="defaultEffect" />
+    <!--app:banner_placeholderDrawable="@mipmap/ic_launcher"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:id="@+id/ll_security"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_security"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/black_text"
+                android:layout_marginLeft="15dp"
+                android:text="安全保障"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_d"/>
+
+        <LinearLayout
+            android:id="@+id/ll_about"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_about"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/black_text"
+                android:layout_marginLeft="15dp"
+                android:text="关于我们"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

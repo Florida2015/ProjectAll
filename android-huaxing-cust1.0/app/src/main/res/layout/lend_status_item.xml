@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_lend_status"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view_lend_line"
+        android:layout_width="@dimen/dimen_1px"
+        android:layout_height="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/blue_1f80"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/view_lend_lin_2"
+        android:layout_width="@dimen/dimen_1px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/blue_1f80"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/view_lend_dot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/blue_lend_detail_item"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_lend_status_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view_lend_dot"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingRight="@dimen/dimen_10dp">
+        <TextView
+            android:id="@+id/tv_lend_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/black_3333"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="标的"/>
+        <TextView
+            android:id="@+id/tv_lend_status_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_12sp"
+            android:text="2016-09-23 12:15"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_lend_status_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view_lend_dot"
+        android:layout_below="@+id/relative_lend_status_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@color/black_aaaa"
+        android:textSize="@dimen/dimen_12sp"
+        android:text="标的"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view_lend_line"
+        android:layout_below="@+id/tv_lend_status_detail"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/blue_1f80"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:text="查看余额"/>
+</RelativeLayout>

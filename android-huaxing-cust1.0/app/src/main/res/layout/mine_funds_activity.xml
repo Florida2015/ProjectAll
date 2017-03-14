@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title" />
+
+    <!--//资产-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_circle"/>
+        <TextView
+            android:id="@+id/tv_mine_sum_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black_text"
+            android:text="0.00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_mine_sum_money"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="@color/black_aa_text"
+            android:text="预期收益(元)"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_mine_funds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:dividerHeight="@dimen/dimen_1px"
+        android:divider="@color/grey_f1f1"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:cacheColorHint="@color/white"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

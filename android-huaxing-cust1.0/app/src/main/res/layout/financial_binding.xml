@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/tv_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:drawableRight="@mipmap/ico_down"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="上海"/>
+
+        <TextView
+            android:id="@+id/tv_search_financial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="搜索顾问"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:drawableLeft="@mipmap/ico_search"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:background="@drawable/white_search_bg"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="推荐顾问"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_13sp"
+        android:textColor="@color/grey_text"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1px"
+        android:background="@color/line_d"/>
+
+    <!--<include layout="@layout/view_reflush_recyclerview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.hxxc.huaxing.app.wedgit.trecyclerview.TRecyclerView
+        android:id="@+id/trecycler_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/do_step"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/blue_5199"
+        fancy:fb_focusColor="@color/blue_4f15a"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="下一步"
+        fancy:fb_textColor="@color/white"
+        fancy:fb_textSize="16sp" />
+</LinearLayout>

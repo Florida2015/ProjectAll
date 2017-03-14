@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#d5d5d5</color>
+    <color name="colorPrimary">#be7f24</color>
+    <color name="colorPrimaryDark">#be7f24</color>
+    <color name="colorAccent">#be7f24</color>
+    <color name="background_default">#F4F4F4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#0f000000</color>
+    <color name="transparent_half_01">#03000000</color>
+    <color name="transparent_half_3f">#3f000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_dffff">#dfffffff</color>
+    <color name="white_fafa">#fafafa</color>
+    <color name="white_abc7e">#abc7e7</color>
+    <color name="white_b0d1">#b0d1ed</color>
+    <color name="white_d2e5">#d2e5f5</color>
+    <color name="white_3e8e">#3e8ed6</color>
+    <color name="blue_15a4">#15a4e8</color>
+    <color name="blue_title">#0B4282</color>
+    <color name="blue_d2e6">#d2e6f6</color>
+    <color name="blue_1f80">#1f80d1</color>
+    <color name="blue_4d99">#4d99d8</color>
+    <color name="blue_79b3">#79b3e3</color>
+
+    <color name="grey_default">#F4F4F4</color>
+    <color name="grey_f1f1">#f1f1f1</color>
+    <color name="grey_f5f5">#F5F5F5</color>
+    <color name="grey_fafa">#FaFaFa</color>
+    <color name="grey_f4f4">#F4F4F4</color>
+    <color name="grey_e2e2">#e2e2e2</color>
+    <color name="grey_e5e5">#e5e5e5</color>
+    <color name="grey_3f82">#3f82c6</color>
+
+    <color name="line_e">#4682B4</color>
+    <color name="line_d">#dddddd</color>
+    <color name="line_a">#aaaaaa</color>
+    <color name="line_0">#044675</color>
+    <color name="line_e8e8">#e8e8e8</color>
+
+    <color name="blue_044675">#044675</color>
+    <color name="blue_0447">#044776</color>
+    <color name="blue_1447">#144776</color>
+    <color name="blue_15a5">#15a5e7</color>
+    <color name="blue_2f15a">#2f15a5e7</color>
+    <color name="blue_4f15a">#4f15a5e7</color>
+    <color name="blue_f180">#f180d1</color>
+    <color name="blue_5199">#5199e4</color>
+
+    <color name="main_theme_color">#0195ff</color>
+
+    <color name="black_ff33">#ff333333</color>
+    <color name="ls_orange">#FF9600</color>
+    <color name="orange_ff99">#ff9933</color>
+    <color name="orange_fe9a">#fe9a33</color>
+    <color name="orange_8ffe9">#8ffe9a33</color>
+    <color name="orange_fbb0">#fbb02b</color>
+    <color name="orange_BE7F">#BE7F24</color>
+    <color name="orange_E6C6">#E6C656</color>
+    <color name="orange_D7B3">#D7B37A</color>
+
+    <color name="black_9999">#999999</color>
+    <color name="black_6666">#666666</color>
+    <color name="black_3333">#333333</color>
+    <color name="black_8e8e">#8E8E8E</color>
+    <color name="black_aaaa">#aaaaaa</color>
+    <color name="back_apla">#3f000000</color>
+    <color name="black">#000000</color>
+    <color name="black_a9ce">#a9cef1</color>
+
+    <color name="tab_normal_color">#aaaaaa</color>
+    <color name="tab_pressed_color">#be7f24</color>
+
+    <color name="tab_text_SelectColor">#be7f24</color>
+    <color name="tab_text_UnselectColor">#aa333333</color>
+    <color name="tab_underline_color">#dddddd</color>
+    <color name="tab_indicator_color">#be7f24</color>
+
+    <color name="blue_login_background">#be7f24</color>
+    <color name="orange_text">#fbb02b</color>
+    <color name="orange_e6c6">#e6c656</color>
+    <color name="blue_text">#be7f24</color>
+    <color name="grey_text">#aaaaaa</color>
+    <color name="grey_ddd_text">#dddddd</color>
+    <color name="black_text">#333333</color>
+    <color name="black_aa_text">#aa333333</color>
+
+    <color name="green_29cd">#29cdb5</color>
+
+    <color name="red_FC6B">#FC6B08</color>
+
+    <color name="orange1_stroke">#fc6b08</color>
+    <color name="orange2_stroke">#be7f24</color>
+    <color name="orange3_stroke">#e6c656</color>
+    <color name="orange4_stroke">#d7b37a</color>
+    <color name="grey_stroke">#aaaaaa</color>
+    <color name="black_stroke">#333333</color>
+
+    <color name="yellow_cycle">#f2e6d3</color>
+
+</resources>

@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+//butterknife 配置
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.0'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.hxxc.huaxing.app"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+        // AndroidManifest.xml 里面UMENG_CHANNEL的value为 ${UMENG_CHANNEL_VALUE}
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "channel_name"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+//            manifest.srcFile 'AndroidManifest.xml'
+            jniLibs.srcDirs = ['libs']
+//            java.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            renderscript.srcDirs = ['src']
+//            res.srcDirs = ['res']
+//            assets.srcDirs = ['assets']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile project(':switchbutton')
+    compile project(':pickerview')
+    compile project(':FlycoTabLayout_Lib')
+    //Eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //解决RxJava内存泄露问题
+    compile 'com.trello:rxlifecycle:0.6.1'
+    compile 'com.trello:rxlifecycle-components:0.6.1'
+    //retrofit网络请求2.0.0-beta2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //log
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //返回数据 转换字符串
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    //gson jiexi
+    compile 'com.google.code.gson:gson:2.7'
+    //注解
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    //tabLayout bottom
+    //    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //自定义button控件
+    compile 'com.github.medyo:fancybuttons:1.8.1'
+    //轮播图
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-banner:2.1.5@aar'
+    //崩溃界面
+    compile 'cat.ereza:customactivityoncrash:1.5.0'
+//友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+
+    compile project(path: ':FlycoTabLayout_Lib')
+    compile project(path: ':okhttpserver')
+    compile files('libs/abspatch.jar')
+}

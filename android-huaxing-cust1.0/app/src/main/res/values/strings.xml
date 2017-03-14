@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">财划算</string>
+
+    <string name="text_register_phone">请输入手机号码</string>
+    <string name="text_register_code">请输入验证码</string>
+    <string name="text_register_pass">请输入密码</string>
+    <string name="text_register_pass_again">请再次输入密码</string>
+    <string name="text_pass_text">请输入6-36位密码</string>
+    <string name="text_pass_text_again">请再次输入6-36位密码</string>
+    <string name="text_set_text">请输入6-36位新密码</string>
+    <string name="text_set_text_again">请再次输入6-36位新密码</string>
+    <string name="text_pass">请输入6-36位数字与字母组合密码</string>
+
+    <string name="text_register_phone_right">请输入正确的手机号码</string>
+
+
+    <string name="text_service_mobile">4000-466-600</string>
+
+    <string name="text_login_out">此账号异地登录</string>
+
+</resources>

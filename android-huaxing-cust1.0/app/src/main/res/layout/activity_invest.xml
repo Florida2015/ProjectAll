@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title2" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1px"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/line_d" />
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:paddingRight="@dimen/dimen_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余可投"
+                        android:textColor="@color/black_aa_text"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_surplus_invest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:text="10000"
+                        android:textColor="@color/black_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1px"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:background="@color/line_d" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:paddingRight="@dimen/dimen_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可用余额"
+                        android:textColor="@color/black_aa_text"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_surplus_yu_e"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_weight="1"
+                        android:text="0元"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_surplus_congzhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="[充值]"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1px"
+                android:background="@color/line_d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1px"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/line_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="出借金额"
+                    android:textColor="@color/grey_text"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/tv_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/orange_text"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/line_dash"
+                    android:layerType="software" />
+
+                <com.hxxc.huaxing.app.wedgit.RulerView
+                    android:id="@+id/rulerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="76.7dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="预期收益"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/dimen_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="0"
+                    android:textColor="@color/orange_text"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <com.hxxc.huaxing.app.wedgit.MyCheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="我已阅读并同意"
+                        android:textColor="@color/grey_text"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="《出借服务协议》"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+                <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:layout_marginTop="30dp"
+                    fancy:fb_borderColor="@color/white"
+                    fancy:fb_borderWidth="0dp"
+                    fancy:fb_defaultColor="@color/blue_text"
+                    fancy:fb_radius="5dp"
+                    fancy:fb_text="立即支付"
+                    fancy:fb_textColor="@color/white"
+                    fancy:fb_textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/grey_f1f1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/img_ripple"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/blue_round"/>
+        <!--android:src="@drawable/ripple_auto_bid"-->
+        <!--android:background="@drawable/blue_round"-->
+
+        <com.hxxc.huaxing.app.wedgit.WaveView
+            android:id="@+id/waveview_ripple"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_open_e_aount"
+            android:layout_width="@dimen/dimen_108dp"
+            android:layout_height="@dimen/dimen_108dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            fancy:fb_borderColor="@color/white"
+            fancy:fb_borderWidth="0dp"
+            fancy:fb_defaultColor="@color/blue_text"
+            fancy:fb_radius="@dimen/dimen_108dp"
+            fancy:fb_text="立即开启"
+            fancy:fb_textSize="18sp"
+            fancy:fb_textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black_3333"
+        android:text="开启自动投标，抢标快人一步"/>
+
+</LinearLayout>

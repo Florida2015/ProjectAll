@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:background="@color/transparent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/transparent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="@drawable/blue_e_account_bg">
+
+    <ImageView
+        android:id="@+id/img_icon_bank"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_huaxing_logo"/>
+
+    <TextView
+        android:id="@+id/tv_e_account_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_e_account_name"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="28dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/white_dffff"
+        android:text="xxxxx"
+        />
+
+    <TextView
+        android:id="@+id/tv_e_account_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_e_account_name"
+        android:layout_toRightOf="@+id/img_icon_bank"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/white_dffff"
+        android:text="E账户账号：154233333"
+        />
+
+    <TextView
+        android:id="@+id/tv_e_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/white"
+        android:text="xxxxx"
+        android:layout_alignBaseline="@+id/tv_e_account_bank_name"
+        android:layout_alignBottom="@+id/tv_e_account_bank_name"
+        android:layout_alignLeft="@+id/tv_e_account_bank"
+        android:layout_alignStart="@+id/tv_e_account_bank" />
+    </RelativeLayout>
+</LinearLayout>

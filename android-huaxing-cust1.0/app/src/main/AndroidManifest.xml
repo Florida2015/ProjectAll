@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxxc.huaxing.app">
+
+    <!--权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:name="com.hxxc.huaxing.app.HXXCApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.splash.GuideActivity"
+            android:theme="@style/GuiActivity"
+            android:screenOrientation="portrait"/>
+        <!--主页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--购买界面-->
+        <activity
+            android:name=".ui.wealth.buyproduct.InvestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--产品详情界面-->
+        <activity
+            android:name=".ui.wealth.productdetail.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!--产品列表界面-->
+        <activity
+            android:name=".ui.wealth.productlist.ProductListActivity"
+            android:screenOrientation="portrait" />
+
+        <!--照片界面-->
+        <activity
+            android:name=".ui.wealth.productdetail.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PhonoDialog" />
+
+        <!--个人中心-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.MineFundsActivity"
+            android:screenOrientation="portrait" />
+        <!--个人信息页面-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.MineInformationActivity"
+            android:screenOrientation="portrait" />
+        <!--个人信息页面item-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.UserInfoItemActivity"
+            android:screenOrientation="portrait" />
+        <!--开通E账户-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.account.OpenEAccountActivity"
+            android:screenOrientation="portrait" />
+        <!--自动投标页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.autobid.OpenAutoBidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--自动投标页 填写信息-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.autobid.AutoBidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--自动投标页 填写信息 选择期限-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.autobid.ChoiseTermDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--选择年化收益率-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.autobid.ChoiseInvestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!--出借详情-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.lend.LendDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--E账户-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.account.EAcountActivity"
+            android:screenOrientation="portrait" />
+        <!--充值页 adjustResize|adjustPan -->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.account.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <!--提现 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.account.WithdrawalsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--购买状态 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.order.OrderStatusActivity"
+            android:screenOrientation="portrait" />
+        <!--登录 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--注册 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.RegisterActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <!--注册状态 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.RegisterStatusActivity"
+            android:screenOrientation="portrait" />
+        <!--忘记密码 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.ForgetpasswordActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <!--修改密码 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <!--设置密码 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.SetingPasswordActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <!--选择城市 页-->
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:screenOrientation="portrait" />
+        <!--绑定理财师 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.financial.BindingFinancialActivity"
+            android:screenOrientation="portrait" />
+        <!--搜索顾问页 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.financial.SearchFinancialActivity"
+            android:screenOrientation="portrait" />
+        <!--关于我们 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.userstatus.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!--理财师信息 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.financial.FinancialDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--我的出借 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.lend.MineLendActivity"
+            android:screenOrientation="portrait" />
+        <!--跳转到开通E账户-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.account.WebOpenEaccountActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--绑定顾问 对话框 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.financial.DialogBindingFinancial"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:name=".ui.WebActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <!--资金明细 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.CapitalDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--通知 页-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.notify.NotifyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 更多-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.more.MineMoreActivity"
+            android:screenOrientation="portrait" />
+
+        <!--通知详情-->
+        <activity
+            android:name="com.hxxc.huaxing.app.ui.mine.notify.NotifyDetailActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--App升级下载-->
+        <service android:name="com.hxxc.huaxing.app.service.DownAppService" >
+            <intent-filter>
+                <action android:name="com.huaxia.finance.service.start" />
+            </intent-filter>
+        </service>
+
+        <!--百度地图定位-->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="yIUlAWzPX8qjAd8GpySRI34596o0pK5r" />
+    </application>
+
+</manifest>

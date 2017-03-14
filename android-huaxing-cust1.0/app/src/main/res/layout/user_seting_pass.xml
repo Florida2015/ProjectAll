@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <EditText
+        android:id="@+id/ed_seting_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:maxLength="36"
+        android:ems="10"
+        android:hint="@string/text_set_text"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black_aaaa"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ed_seting_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dimen_1dp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:maxLength="36"
+        android:ems="10"
+        android:hint="@string/text_set_text_again"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black_aaaa"
+        android:textSize="16sp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_seting_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/blue_text"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="确认"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background_default"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title2"/>
+
+    <com.hxxc.huaxing.app.wedgit.verticalpager.DragLayout
+        android:id="@+id/draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.hxxc.huaxing.app.wedgit.verticalpager.DragLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/line_d" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/button_phone"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/blue_text"
+            android:text="拨打电话"/>
+
+        <TextView
+            android:id="@+id/button_buy"
+            android:background="@color/black_aaaa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:enabled="false"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="处理中"/>
+    </LinearLayout>
+</LinearLayout>

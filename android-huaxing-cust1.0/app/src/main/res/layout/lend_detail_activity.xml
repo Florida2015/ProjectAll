@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_f1f1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_f1f1">
+
+        <!--<android.support.design.widget.CoordinatorLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fitsSystemWindows="false"-->
+            <!--android:layout_above="@+id/btn_credicard_person"-->
+            <!--android:background="@color/grey_f1f1">-->
+
+            <!--<android.support.design.widget.AppBarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fitsSystemWindows="false"-->
+                <!--android:background="@color/white">-->
+
+                <RelativeLayout
+                    android:id="@+id/relative_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_15dp"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_lendName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:textColor="@color/black_aaaa"
+                        android:text=" "/>
+                    <TextView
+                        android:id="@+id/tv_lendData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_lendName"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:textSize="@dimen/dimen_13sp"
+                        android:textColor="@color/black_aaaa"
+                        android:text="起息时间： "/>
+                    <TextView
+                        android:id="@+id/tv_lendType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textColor="@color/black_aaaa"
+                        android:text="xx "/>
+                </RelativeLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_lend_detail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/relative_title"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_gravity="top"
+                    android:background="@color/white"
+                    android:visibility="visible"
+                    app:tabIndicatorHeight="1dp"
+                    app:tabIndicatorColor="@color/blue_text"
+                    app:tabGravity="fill"
+                    app:tabSelectedTextColor="@color/blue_text"
+                    app:tabTextColor="@color/black"
+                    />
+            <!--</android.support.design.widget.AppBarLayout>-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_lend_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tab_layout_lend_detail"
+                android:layout_above="@+id/btn_credicard_person"
+                android:paddingBottom="0dp"
+                android:background="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <!--</android.support.design.widget.CoordinatorLayout>-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_credicard_person"
+            style="@style/bespeak_submit_btn"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:padding="12dp"
+            fancy:fb_borderColor="@color/white"
+            fancy:fb_borderWidth="0dp"
+            fancy:fb_defaultColor="@color/blue_text"
+            fancy:fb_radius="0dp"
+            fancy:fb_text="申请债权转让"
+            fancy:fb_textSize="16sp"
+            fancy:fb_textColor="@color/white" >
+        </mehdi.sakout.fancybuttons.FancyButton>
+    </RelativeLayout>
+</LinearLayout>

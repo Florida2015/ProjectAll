@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/transparent_half_3f">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_cancal_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="@dimen/dimen_5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_9999"
+            android:text="完成"/>
+        <ImageButton
+            android:id="@+id/img_btn_close_choise"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dimen_5dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ico_close"
+            android:background="@color/transparent"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1px"
+        android:background="@color/grey_f1f1"/>
+
+    <ListView
+        android:id="@+id/list_bid_data"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:background="@color/white"
+        android:dividerHeight="@dimen/dimen_1px"
+        android:divider="@color/grey_f1f1"
+        android:listSelector="@color/white"/>
+
+</LinearLayout>

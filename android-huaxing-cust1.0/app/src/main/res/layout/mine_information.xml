@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/icon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="头像"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/aliwx_arrow"
+                        android:visibility="visible" />
+
+                    <com.hxxc.huaxing.app.wedgit.CircleImageView
+                        android:id="@+id/user_icon_userinfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/imageView1"
+                        android:src="@mipmap/icon_my_head" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="真实姓名"
+                    app:right="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_depository"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="资金存管"
+                    app:right="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="银行卡"
+                    app:right="" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="性别"
+                    app:right_hint="请选择性别" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="出生年月"
+                    app:right_hint="请选择出生年月" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/ll_household_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="户籍地"
+                    app:right_hint="请选择户籍地" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/ll_household_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="户籍地址"
+                    app:right_hint="请填写户籍地址" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/relative_edcation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="教育水平"
+                    app:right_hint="请选择" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/department_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="婚姻状况"
+                    app:right_hint="请选择婚姻状况" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/ll_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="职业"
+                    app:right_hint="请选择职业类型" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/ll_residence"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="居住地"
+                    app:right_hint="请选择所在省市" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_d" />
+
+                <com.hxxc.huaxing.app.wedgit.LeftAndRightTextView
+                    android:id="@+id/ll_residence_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:arr="true"
+                    app:left="居住地址"
+                    app:right_hint="请填写居住地址" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_d" />
+
+            <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_exit_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:padding="12dp"
+                fancy:fb_borderColor="@color/white"
+                fancy:fb_borderWidth="0dp"
+                fancy:fb_defaultColor="@color/blue_text"
+                fancy:fb_focusColor="@color/orange_8ffe9"
+                fancy:fb_radius="5dp"
+                fancy:fb_text="退出登录"
+                fancy:fb_textColor="@color/white"
+                fancy:fb_textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/grey_f1f1" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_title" />
+
+</LinearLayout>

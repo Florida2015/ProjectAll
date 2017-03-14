@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1f1">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_15dp">
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:background="@color/line_e8e8" />
+
+        <EditText
+            android:id="@+id/ed_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:ems="10"
+            android:hint="请输入手机号"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black_3333"
+            android:textColorHint="@color/black_aaaa"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/ed_register_code_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="请输入图形验证码"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black_3333"
+                android:textColorHint="@color/black_aaaa"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_e8e8" />
+
+            <ImageView
+                android:id="@+id/img_register_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="@color/line_e8e8" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_register_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="6"
+                android:ems="10"
+                android:hint="请输入验证码"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black_3333"
+                android:textColorHint="@color/black_aaaa"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_e8e8" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/tv_send_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/orange_fbb0"
+                    android:text="发送验证码" />
+                <ProgressBar
+                    android:id="@+id/progressbar_send_code"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/bespeak_login_progress"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_set_pass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:maxLength="36"
+        android:ems="10"
+        android:hint="@string/text_pass_text"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black_3333"
+        android:textColorHint="@color/black_aaaa"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1px"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:background="@color/line_e8e8" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_set_pass_again"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:maxLength="36"
+        android:ems="10"
+        android:hint="@string/text_pass_text_again"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black_3333"
+        android:textColorHint="@color/black_aaaa"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ed_set_code"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/white"
+        android:inputType="text"
+        android:maxLength="20"
+        android:ems="10"
+        android:hint="请输入邀请码(选填)"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black_3333"
+        android:textColorHint="@color/black_aaaa"
+        android:textSize="16sp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_register_r"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="0dp"
+        fancy:fb_defaultColor="@color/blue_text"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="注册"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp">
+
+        <CheckBox
+            android:id="@+id/ch_box_register"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/bx_register_check"/>
+        <TextView
+            android:id="@+id/tv_register_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/black_aaaa"
+            android:text="我已阅读并同意《注册服务协议》" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleNumberView">
+        <attr name="text_num" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LeftRightTextView">
+        <attr name="left" format="string" />
+        <attr name="left_color" format="color|reference"/>
+        <attr name="right" format="string"/>
+        <attr name="right_hint" format="string"/>
+        <attr name="right_color" format="color|reference" />
+        <attr name="left_drawable" format="reference" />
+
+        <attr name="arr" format="boolean" />
+        <attr name="background_color">
+            <enum name="white" value="0" />
+            <enum name="grey" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

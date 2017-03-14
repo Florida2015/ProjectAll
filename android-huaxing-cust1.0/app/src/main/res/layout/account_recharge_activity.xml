@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_default">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black_aaaa"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="可用余额："/>
+        <TextView
+            android:id="@+id/tv_recharge_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/orange_fbb0"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="0.00元"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_recharge_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:inputType="numberDecimal"
+        android:background="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/black_3333"
+        android:textColorHint="@color/black_aaaa"
+        android:hint="请输入充值金额"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:padding="12dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/blue_text"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="充值"
+        fancy:fb_textSize="16sp"
+        fancy:fb_textColor="@color/white" >
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <TextView
+        android:id="@+id/tv_recharge_bank_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_48dp"
+        android:singleLine="true"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/dimen_14sp"
+        android:text="银行卡充值引导(T+1日到账)"/>
+    <TextView
+        android:id="@+id/tv_recharge_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:singleLine="true"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/dimen_14sp"
+        android:text="E账户余额充值引导(实时到账)"/>
+
+</LinearLayout>
